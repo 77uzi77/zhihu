@@ -41,11 +41,15 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean register(UserVo user) {
-        if (user.getUsername() != null && userMapper.findUserByUsername(user.getUsername()) != null){
+        if (user.getEmail() == null || user.getUsername() == null || user.getCode() == null || user.getPassword() == null)  {
+            throw new BizException("相关信息不能为空！");
+        }
+        if (userMapper.findUserByUsername(user.getUsername()) != null){
             throw new BizException("此用户名已存在，请重新注册");
         }
+
         String code = String.valueOf(redisUtil.get(user.getEmail()));
-        if (redisUtil.getExpire(user.getEmail()) > 0 && user.getCode() != null && user.getCode().equals(code)){
+        if (redisUtil.getExpire(user.getEmail()) > 0 && user.getCode().equals(code)){
             user.setPassword(PasswordUtil.encode(user.getPassword()));
             user.setMessage("暂未填写");
             if (userMapper.saveUser(user) != 0){
