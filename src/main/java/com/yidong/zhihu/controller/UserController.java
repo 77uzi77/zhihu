@@ -1,20 +1,22 @@
 package com.yidong.zhihu.controller;
 
 import com.yidong.zhihu.entity.ResultBean;
+import com.yidong.zhihu.entity.User;
 import com.yidong.zhihu.entity.vo.UserVo;
 import com.yidong.zhihu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.data.redis.core.RedisTemplate;
+
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     @GetMapping("sendCode")
     public ResultBean<String> sendEmail(String email){
@@ -25,12 +27,27 @@ public class UserController {
         }
     }
 
-    @PostMapping("register")
+    @PostMapping("/register")
     public ResultBean<String> register(UserVo user){
+        
         if (userService.register(user)){
             return new ResultBean<>("注册成功！");
         }else{
             return new ResultBean<>("注册失败！");
         }
+    }
+
+    @PostMapping("/login")
+    public ResultBean<com.alibaba.fastjson.JSONObject> login(@RequestBody User user){
+        return new ResultBean<>(userService.login(user));
+    }
+
+    @PostMapping("/test")
+    public ResultBean<String>/*Map<String, Object>*/ test(/*HttpServletRequest request*/) {
+       /* Map<String,Object> map = new HashMap<>();
+
+        map.put("state",true);
+        map.put("msg","请求成功");*/
+        return new ResultBean<>("请求成功！");/*map*/
     }
 }

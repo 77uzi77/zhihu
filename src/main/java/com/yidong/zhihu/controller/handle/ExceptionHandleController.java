@@ -16,13 +16,6 @@ import java.io.PrintStream;
 @RestControllerAdvice
 public class ExceptionHandleController implements HandlerExceptionResolver {
 
-
-//    private final MailUtil mailUtil;
-
-//    public ExceptionHandleController(MailUtil mailUtil) {
-//        this.mailUtil = mailUtil;
-//    }
-
     @Override
     public ModelAndView resolveException(HttpServletRequest httpServletRequest,
                                          HttpServletResponse httpServletResponse,
@@ -105,10 +98,5 @@ public class ExceptionHandleController implements HandlerExceptionResolver {
         e.printStackTrace(new PrintStream(stream));
         return stream.toString();
     }
-
-//    private void sendMail(Throwable e){
-//        mailUtil.sendMail("异常抛出", getErrorMsg(e).toString());
-//    }
-
 
 }

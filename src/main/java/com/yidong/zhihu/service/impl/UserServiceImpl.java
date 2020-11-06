@@ -1,16 +1,24 @@
 package com.yidong.zhihu.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
 import com.yidong.zhihu.entity.User;
 import com.yidong.zhihu.entity.vo.UserVo;
 import com.yidong.zhihu.exception.bizException.BizException;
 import com.yidong.zhihu.mapper.UserMapper;
 import com.yidong.zhihu.service.MailService;
 import com.yidong.zhihu.service.UserService;
+import com.yidong.zhihu.utils.JWTUtils;
 import com.yidong.zhihu.utils.PasswordUtil;
 import com.yidong.zhihu.utils.RandomCodeUtil;
 import com.yidong.zhihu.utils.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -20,6 +28,9 @@ public class UserServiceImpl implements UserService {
     private MailService mailService;
     @Autowired
     private RedisUtil redisUtil;
+    @Autowired
+    private RedisTemplate redisTemplate;
+
 
     @Override
     public boolean sendEmail(String email) {
@@ -61,5 +72,38 @@ public class UserServiceImpl implements UserService {
         }else{
             throw new BizException("验证邮箱验证码错误，注册失败");
         }
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public JSONObject login(User user){
+        String username = user.getUsername();
+        JSONObject obj = new JSONObject();
+            User userDB = userMapper.findUserByUsername(username);
+            String findPassword = userMapper.findPasswordByUsername(username);
+            if (findPassword == null){
+                throw new BizException("用户不存在");
+            }
+            if (!user.getPassword().equals(findPassword)){
+                throw new BizException("密码错误");
+            }
+
+            //payload
+            Map<String,String> payload = new HashMap<>();
+            payload.put("id", String.valueOf(userDB.getId()));   //注意转换字符格式
+            payload.put("username",userDB.getUsername());
+            payload.put("password",userDB.getPassword());
+            //生成JWT令牌
+            String token = JWTUtils.getToken(payload);
+
+        System.out.println(userDB.getId());
+            //将登录的信息保存到Redis
+            redisTemplate.opsForValue().set(String.valueOf(userDB.getId()),token);
+
+            obj.put("state",true);
+            obj.put("msg","认证成功");
+            obj.put("token",token);
+
+        return  obj;
     }
 }

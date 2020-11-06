@@ -14,9 +14,12 @@ public interface UserMapper {
     @Select("select id from user where email = #{email}")
     User findUserByEmail(String email);
 
-    @Select("select username from user where username = #{username}")
+    @Select("select * from user where username = #{username}")
     User findUserByUsername(String username);
 
     @Insert("insert into user (username,email,password,message) values (#{username},#{email},#{password},#{message})")
     int saveUser(UserVo user);
+
+    @Select("select password from user where username = #{username}")
+    String findPasswordByUsername (String username);
 }
