@@ -79,30 +79,31 @@ public class UserServiceImpl implements UserService {
     public JSONObject login(User user){
         String username = user.getUsername();
         JSONObject obj = new JSONObject();
-            User userDB = userMapper.findUserByUsername(username);
-            String findPassword = userMapper.findPasswordByUsername(username);
-            if (findPassword == null){
-                throw new BizException("用户不存在");
-            }
-            if (!user.getPassword().equals(findPassword)){
-                throw new BizException("密码错误");
-            }
+        User userDB = userMapper.findUserByUsername(username);
+        String findPassword = userMapper.findPasswordByUsername(username);
+        String userPassword = PasswordUtil.encode(user.getPassword());
+        if (findPassword == null){
+            throw new BizException("用户不存在");
+        }
+        if (!userPassword.equals(findPassword)){
+            throw new BizException("密码错误");
+        }
 
-            //payload
-            Map<String,String> payload = new HashMap<>();
-            payload.put("id", String.valueOf(userDB.getId()));   //注意转换字符格式
-            payload.put("username",userDB.getUsername());
-            payload.put("password",userDB.getPassword());
-            //生成JWT令牌
-            String token = JWTUtils.getToken(payload);
+        //payload
+        Map<String,String> payload = new HashMap<>();
+        payload.put("id", String.valueOf(userDB.getId()));   //注意转换字符格式
+        payload.put("username",userDB.getUsername());
+//      payload.put("password",userDB.getPassword());
+        //生成JWT令牌
+        String token = JWTUtils.getToken(payload);
 
         System.out.println(userDB.getId());
-            //将登录的信息保存到Redis
-            redisTemplate.opsForValue().set(String.valueOf(userDB.getId()),token);
+        //将登录的信息保存到Redis
+        redisTemplate.opsForValue().set(String.valueOf(userDB.getId()),token);
 
-            obj.put("state",true);
-            obj.put("msg","认证成功");
-            obj.put("token",token);
+        obj.put("state",true);
+        obj.put("msg","认证成功");
+        obj.put("token",token);
 
         return  obj;
     }
