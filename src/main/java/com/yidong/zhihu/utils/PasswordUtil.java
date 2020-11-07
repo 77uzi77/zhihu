@@ -5,6 +5,7 @@ import java.security.MessageDigest;
 public class PasswordUtil {
 
     private static final String SALT = "yidong";
+
     public static String encode(String password) {
         password = password + SALT;
         MessageDigest md5 = null;

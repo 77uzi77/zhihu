@@ -24,17 +24,14 @@ public class JWTUtils {
     public static String getToken( Map<String,String> map){
         Calendar instance = Calendar.getInstance();
         instance.add(Calendar.DATE,7);
-
         //创建jwt builder   配合map
        JWTCreator.Builder builder = JWT.create();
        //payload
         map.forEach((k,v)->{
             builder.withClaim(k,v);
         });
-
         String token = builder.withExpiresAt(instance.getTime())   //指定令牌过期时间
                 .sign(Algorithm.HMAC256(SIG));        //sig
-
         System.out.println(token);
         return token;
     }

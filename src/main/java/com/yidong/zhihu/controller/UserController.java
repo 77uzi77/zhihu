@@ -5,8 +5,6 @@ import com.yidong.zhihu.entity.User;
 import com.yidong.zhihu.entity.vo.UserVo;
 import com.yidong.zhihu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
-
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -15,21 +13,18 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-    @Autowired
-    private RedisTemplate redisTemplate;
 
     @GetMapping("sendCode")
-    public ResultBean<String> sendEmail(String email){
+    public ResultBean<String> sendEmail(@RequestBody String email){
         if (userService.sendEmail(email)){
             return new ResultBean<>("发送验证码成功！请注意查收！");
         }else{
-            return new ResultBean<>("发送邮件失败，请检查邮箱是否正确");
+            return new ResultBean<>("发送邮件失败，请检查邮箱是否正确！");
         }
     }
 
     @PostMapping("/register")
-    public ResultBean<String> register(UserVo user){
-        
+    public ResultBean<String> register(@RequestBody UserVo user){
         if (userService.register(user)){
             return new ResultBean<>("注册成功！");
         }else{
@@ -43,11 +38,12 @@ public class UserController {
     }
 
     @PostMapping("/test")
-    public ResultBean<String>/*Map<String, Object>*/ test(/*HttpServletRequest request*/) {
+    public ResultBean<String> test(String message) {
        /* Map<String,Object> map = new HashMap<>();
-
         map.put("state",true);
         map.put("msg","请求成功");*/
+        System.out.println(message);
         return new ResultBean<>("请求成功！");/*map*/
+
     }
 }

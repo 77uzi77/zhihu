@@ -5,8 +5,8 @@ import com.auth0.jwt.exceptions.SignatureVerificationException;
 import com.auth0.jwt.exceptions.TokenExpiredException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yidong.zhihu.utils.JWTUtils;
+import com.yidong.zhihu.utils.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -18,23 +18,23 @@ import java.util.Map;
 public class JWTInterceptor implements HandlerInterceptor {
 
     @Autowired
-    private RedisTemplate redisTemplate;
+    private RedisUtil redisUtil;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object o) throws Exception {
         //获取请求头中令牌
         Map<String,Object> map = new HashMap<>();
-        String id = request.getHeader("id");
+        String token = request.getHeader("token");
 
         try {
-            String tokenFromRedis = (String)redisTemplate.opsForValue().get(id);
-            JWTUtils.verify(tokenFromRedis);   //验证令牌
-            if (tokenFromRedis!=null) {
+            String tokenFromRedis = (String) redisUtil.get(token);
+            if (tokenFromRedis != null) {
+                JWTUtils.verify(tokenFromRedis);   //验证令牌
                 System.out.println("校验成功");
                 return true;              //放行请求
             }else {
                 System.out.println("校验失败，返回登录");
-                return false;
+                map.put("msg","校验失败，返回登录");
             }
         }catch (SignatureVerificationException e){
             e.printStackTrace();

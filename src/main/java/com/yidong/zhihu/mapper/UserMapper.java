@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserMapper {
 
-    @Select("select id from user where email = #{email}")
+    @Select("select * from user where email = #{email}")
     User findUserByEmail(String email);
 
     @Select("select * from user where username = #{username}")
@@ -20,6 +20,6 @@ public interface UserMapper {
     @Insert("insert into user (username,email,password,message) values (#{username},#{email},#{password},#{message})")
     int saveUser(UserVo user);
 
-    @Select("select password from user where username = #{username}")
-    String findPasswordByUsername (String username);
+//    @Select("select password from user where username = #{username}")
+//    String findPasswordByUsername (String username);
 }
