@@ -7,10 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * @author lyx
- * @date 2020/8/7 14:56
- */
 @Component
 public class AllowOriginFilter implements Filter {
 
