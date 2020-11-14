@@ -1,11 +1,22 @@
 package com.yidong.zhihu.filter;
 
 import org.springframework.stereotype.Component;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 过滤器解决跨域
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+<<<<<<< HEAD
+=======
+/**
+ * @author lyx
+ * @date 2020/8/7 14:56
+ */
+>>>>>>> 过滤器解决跨域
 @Component
 public class AllowOriginFilter implements Filter {
 
@@ -31,4 +42,7 @@ public class AllowOriginFilter implements Filter {
 
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 过滤器解决跨域
