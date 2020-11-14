@@ -42,6 +42,8 @@ pagehelper:
   params: count=countSql
 
 
+
+
 # mybatis:
 #  type-aliases-package: com.yidong.zhihu.entity
 #  mapper-locations: classpath:com/yidong/zhihu/mapper/*.xml
