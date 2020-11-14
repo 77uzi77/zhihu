@@ -35,6 +35,12 @@ spring:
           auth: true
           ssl:
             enable: true
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
 
 # mybatis:
 #  type-aliases-package: com.yidong.zhihu.entity
