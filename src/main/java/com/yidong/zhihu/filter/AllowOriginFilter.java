@@ -1,10 +1,7 @@
 package com.yidong.zhihu.filter;
 
 import org.springframework.stereotype.Component;
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/ida
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -35,7 +32,3 @@ public class AllowOriginFilter implements Filter {
 
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/ida

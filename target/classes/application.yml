@@ -6,12 +6,12 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/zhihu?characterEncoding=utf8&serverTimezone=GMT
+    url: jdbc:mysql://192.168.1.158:3306/zhihu?characterEncoding=utf8&serverTimezone=GMT
     username: root
-    password: 1234
+    password: root
   redis:
     database: 0
-    host: localhost
+    host: 39.102.60.119
     port: 6379
     jedis:
       pool:
@@ -40,8 +40,3 @@ pagehelper:
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
-
-
-# mybatis:
-#  type-aliases-package: com.yidong.zhihu.entity
-#  mapper-locations: classpath:com/yidong/zhihu/mapper/*.xml
