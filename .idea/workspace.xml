@@ -23,35 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bed8e52c-2b1e-484e-853e-8e8bf4182e12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/RedisSchedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/FavController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/ThumbController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Fav.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Thumb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/FavMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/ThumbMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/FavService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/ThumbService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/FavServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/ThumbServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/ZhihuApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/ZhihuApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/AnswerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/AnswerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/AnswerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/QuestionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/QuestionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/AnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/AnswerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/AnswerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/AnswerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/QuestionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/utils/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/utils/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/ZhihuApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/ZhihuApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/config/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/config/RedisConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/utils/RedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/utils/RedisUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,6 +195,7 @@
       <workItem from="1605606995926" duration="6040000" />
       <workItem from="1605854086461" duration="2651000" />
       <workItem from="1606013038913" duration="3304000" />
+      <workItem from="1606217285648" duration="2426000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1603961270433</created>
@@ -266,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605359915555</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="question-answer2.0">
+      <created>1606217364178</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606217364178</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,13 +270,18 @@
     <MESSAGE value="login-1" />
     <MESSAGE value="login-1.0" />
     <MESSAGE value="question-answer1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="question-answer1.0" />
+    <MESSAGE value="question-answer2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="question-answer2.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="261" y="0" key="#Inspections" timestamp="1604467851180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="261" y="0" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1604467851180" />
+    <state x="261" y="0" key="#Notifications" timestamp="1606220627438">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="261" y="0" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1606220627438" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604642340779">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -313,10 +298,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="722" y="482" width="490" height="342" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1605857683156" />
-    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1605359913622">
+    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1606217361615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605359913622" />
+    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606217361615" />
     <state x="499" y="94" key="FileChooserDialogImpl" timestamp="1604673410905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -381,10 +366,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="476" y="50" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1604720475344" />
-    <state x="261" y="81" key="Vcs.Push.Dialog.v2" timestamp="1605360005424">
+    <state x="261" y="81" key="Vcs.Push.Dialog.v2" timestamp="1606217391939">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="261" y="81" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605360005424" />
+    <state x="261" y="81" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606217391939" />
     <state x="389" y="85" key="VcsDiffUtil.ChangesDialog" timestamp="1604720350218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -409,10 +394,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="530" y="159" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1604720528067" />
-    <state x="457" y="159" key="git4idea.merge.GitPullDialog" timestamp="1604323050047">
+    <state x="457" y="159" key="git4idea.merge.GitPullDialog" timestamp="1606220572852">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="457" y="159" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1604323050047" />
+    <state x="457" y="159" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1606220572852" />
     <state x="536" y="249" key="git4idea.rebase.GitRebaseDialog" timestamp="1604720481328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
