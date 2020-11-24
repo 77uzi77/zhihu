@@ -6,7 +6,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/zhihu?characterEncoding=utf8&serverTimezone=GMT
+    url: jdbc:mysql://localhost/zhihu?characterEncoding=utf8&serverTimezone=GMT
     username: root
     password: 1234
   redis:
@@ -41,9 +41,7 @@ pagehelper:
   supportMethodsArguments: true
   params: count=countSql
 
-
-
-
-# mybatis:
-#  type-aliases-package: com.yidong.zhihu.entity
-#  mapper-locations: classpath:com/yidong/zhihu/mapper/*.xml
+web:
+  upload-path: static/img/
+  url: http://localhost:8080
+  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

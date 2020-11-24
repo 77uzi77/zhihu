@@ -2,16 +2,18 @@ package com.yidong.zhihu.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.yidong.zhihu.entity.PageBean;
 import com.yidong.zhihu.entity.Question;
 import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.mapper.QuestionMapper;
 import com.yidong.zhihu.service.QuestionService;
+import com.yidong.zhihu.utils.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Slf4j
+
 @Service
 public class QuestionServiceImpl implements QuestionService {
     @Autowired

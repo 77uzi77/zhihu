@@ -27,18 +27,18 @@ public class FileServiceImpl implements FileService {
     //上传用户头像
     @Override
     public String insertUserPhoto(String username, MultipartFile file) {
-        String fileName=file.getOriginalFilename();
-        log.info("开始上传头像{}",fileName);
-        if(file==null){
+        if(file == null){
             throw  new BizException("文件为空");
         }
+        String fileName = file.getOriginalFilename();
+        log.info("开始上传头像{}",fileName);
         //判断是否为图片格式
         if(!FileUtils.judgeFileType(fileName.substring(fileName.lastIndexOf(".")+1))){
             log.error("文件不是图片格式，不能作为头像");
             throw new BizException("文件格式错误");
         }
         String filePath=path+"user/";
-        String fileNewName= FileUtils.getFileNewName(file.getOriginalFilename());
+        String fileNewName = FileUtils.getFileNewName(file.getOriginalFilename());
 
         //调用mapper层保存上传的头像路径名称fileNewName
         userMapper.saveIconpath(username,fileNewName);
