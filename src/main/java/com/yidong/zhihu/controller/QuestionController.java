@@ -1,13 +1,17 @@
 package com.yidong.zhihu.controller;
 
+import com.auth0.jwt.interfaces.DecodedJWT;
 import com.yidong.zhihu.entity.Question;
 import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.service.QuestionService;
 import com.yidong.zhihu.utils.JWTUtils;
+import io.lettuce.core.ScriptOutputType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import javax.servlet.http.HttpServletRequest;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.Arrays;
+import java.util.List;
 
 @RestController
 @RequestMapping("question")
@@ -15,9 +19,6 @@ public class QuestionController {
     @Autowired
     private QuestionService questionService;
 
-    /**
-     *  提问
-     */
     @PostMapping("askQuestion")
     public ResultBean<String> askQuestion(HttpServletRequest request, @RequestBody Question question){
         String token = request.getHeader("token");
@@ -42,6 +43,24 @@ public class QuestionController {
     @GetMapping("findPage")
     public ResultBean<?> findPage(int pageNum, int pageSize){
         return questionService.findPage(pageNum,pageSize);
+    }
+
+    /**
+     * 查询分页数据
+     */
+    @GetMapping("findMyQueByPage")
+    public ResultBean<?> findMyQueByPage(@RequestParam(name = "currentPage", defaultValue = "1") String currentPage,
+                                         @RequestParam(name = "pageSize", defaultValue = "3") String pageSize,
+                                         @RequestParam(name = "username", defaultValue = "") String username){
+        return new ResultBean<>(questionService.findMyQueByPage(currentPage, pageSize,username));
+    }
+
+    /**
+     * 根据标题查找对应question实体
+     */
+    @GetMapping("findQuestionByTitle")
+    public ResultBean<?> FindQuestionByTitle( String title ){
+        return new ResultBean<>(questionService.FindQuestionByTitle(title));
     }
 
     /**

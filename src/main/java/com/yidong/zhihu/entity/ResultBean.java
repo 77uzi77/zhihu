@@ -1,6 +1,4 @@
 package com.yidong.zhihu.entity;
-
-
 import com.yidong.zhihu.exception.bizException.BizException;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,10 +7,6 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/**
- * @author:
- * @date:
- */
 @Data
 @Builder
 @AllArgsConstructor
@@ -45,10 +39,6 @@ public class ResultBean<T> implements Serializable {
 
     /**
      * @Description : 此时系统发生未知异常
-     * @Param : [e]
-     * @Return :
-     * @Author : SheldonPeng
-     * @Date : 2019-10-11
      */
     public ResultBean(Throwable e) {
         super();
@@ -62,4 +52,3 @@ public class ResultBean<T> implements Serializable {
         this.code = e.getCode();
     }
 }
-

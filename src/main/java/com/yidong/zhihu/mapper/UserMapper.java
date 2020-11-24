@@ -20,6 +20,7 @@ public interface UserMapper {
     @Insert("insert into user (username,email,password,message) values (#{username},#{email},#{password},#{message})")
     int saveUser(UserVo user);
 
-//    @Select("select password from user where username = #{username}")
-//    String findPasswordByUsername (String username);
+    @Insert("update user set iconpath=#{iconpath} where username = #{username}")
+    void saveIconpath(String username, String iconpath);
+
 }

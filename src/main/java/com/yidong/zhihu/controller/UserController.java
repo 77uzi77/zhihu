@@ -15,7 +15,7 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("sendCode")
-    public ResultBean<String> sendEmail(String email){
+    public ResultBean<String> sendEmail(@RequestParam("email") String email){
         if (userService.sendEmail(email)){
             return new ResultBean<>("发送验证码成功！请注意查收！");
         }else{
@@ -44,6 +44,6 @@ public class UserController {
         map.put("msg","请求成功");*/
         System.out.println(message);
         return new ResultBean<>("请求成功！");/*map*/
-
     }
+
 }

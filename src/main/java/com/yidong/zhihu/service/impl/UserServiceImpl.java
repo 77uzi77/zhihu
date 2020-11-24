@@ -8,6 +8,7 @@ import com.yidong.zhihu.mapper.UserMapper;
 import com.yidong.zhihu.service.MailService;
 import com.yidong.zhihu.service.UserService;
 import com.yidong.zhihu.utils.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -17,6 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
+@Slf4j
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
@@ -119,4 +121,5 @@ public class UserServiceImpl implements UserService {
 
         return  obj;
     }
+
 }
