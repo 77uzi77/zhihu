@@ -41,4 +41,40 @@ public class QuestionController {
     public ResultBean<?> findPage(int pageNum, int pageSize){
         return questionService.findPage(pageNum,pageSize);
     }
+
+    /**
+     * 查询分页数据
+     */
+    @GetMapping("findMyQueByPage")
+    public ResultBean<?> findMyQueByPage(@RequestParam(name = "currentPage", defaultValue = "1") String currentPage,
+                                         @RequestParam(name = "pageSize", defaultValue = "3") String pageSize,
+                                         @RequestParam(name = "username", defaultValue = "") String username){
+        return new ResultBean<>(questionService.findMyQueByPage(currentPage, pageSize,username));
+    }
+
+    /**
+     * 根据标题查找对应question实体
+     */
+    @GetMapping("findQuestionByTitle")
+    public ResultBean<?> FindQuestionByTitle( String title ){
+        return new ResultBean<>(questionService.FindQuestionByTitle(title));
+    }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

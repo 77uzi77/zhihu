@@ -12,4 +12,5 @@ public interface UserService {
     boolean register(UserVo user);
 
     JSONObject login(User user);
+
 }

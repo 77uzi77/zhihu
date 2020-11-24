@@ -29,6 +29,5 @@ public class AnswerController {
         }else{
             return new ResultBean<>("回答失败！");
         }
-
     }
 }

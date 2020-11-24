@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.yidong.zhihu.ZhihuApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.238 s - in com.yidong.zhihu.ZhihuApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.037 s - in com.yidong.zhihu.ZhihuApplicationTests
