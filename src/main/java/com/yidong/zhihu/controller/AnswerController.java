@@ -5,10 +5,7 @@ import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.service.AnswerService;
 import com.yidong.zhihu.utils.JWTUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -18,6 +15,9 @@ public class AnswerController {
     @Autowired
     private AnswerService answerService;
 
+    /**
+     *  回答问题
+     */
     @PostMapping("answerQuestion")
     public ResultBean<String> answerQuestion(HttpServletRequest request,@RequestBody Answer answer){
         System.out.println(answer);
@@ -29,6 +29,13 @@ public class AnswerController {
         }else{
             return new ResultBean<>("回答失败！");
         }
+    }
 
+    /**
+     *  根据提问id 查询该问题下所有回答
+     */
+    @GetMapping("findAnswer")
+    public ResultBean<?> findAnswer(int pageNum, int pageSize,String aquestion_id){
+        return answerService.findAnswer(pageNum,pageSize,aquestion_id);
     }
 }

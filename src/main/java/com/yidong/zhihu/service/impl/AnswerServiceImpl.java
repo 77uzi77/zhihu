@@ -1,19 +1,26 @@
 package com.yidong.zhihu.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.yidong.zhihu.entity.Answer;
+import com.yidong.zhihu.entity.Question;
+import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.mapper.AnswerMapper;
 import com.yidong.zhihu.service.AnswerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class AnswerServiceImpl implements AnswerService {
     @Autowired
     private AnswerMapper answerMapper;
+
     @Override
     public boolean answerQuestion(Answer answer) {
 
-        if (answer.getContent() == null){
+        if (answer.getContent() == null || answer.getAquestion_id() == null){
             return false;
         }
         /**
@@ -26,5 +33,13 @@ public class AnswerServiceImpl implements AnswerService {
         }catch (Exception e){
             return answerMapper.addAnswer(answer) == 1;
         }
+    }
+
+    @Override
+    public ResultBean<?> findAnswer(int pageNum, int pageSize, String aquestion_id) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<Answer> answerList = answerMapper.selectPageByQuestion(aquestion_id);
+        PageInfo<Answer> pageList = new PageInfo<>(answerList);
+        return new ResultBean<>(pageList.getList());
     }
 }

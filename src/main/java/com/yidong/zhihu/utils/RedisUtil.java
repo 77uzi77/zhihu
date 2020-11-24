@@ -1,7 +1,9 @@
 package com.yidong.zhihu.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.Cursor;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ScanOptions;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -289,7 +291,7 @@ public class RedisUtil {
      * @param by   要增加几(大于0)
      * @return
      */
-    public double hincr(String key, String item, double by) {
+    public double hincr(String key, String item, int by) {
         return redisTemplate.opsForHash().increment(key, item, by);
     }
 
@@ -568,4 +570,7 @@ public class RedisUtil {
         }
     }
 
+    public Cursor<Map.Entry<Object, Object>> scanAll(String key){
+        return redisTemplate.opsForHash().scan(key, ScanOptions.NONE);
+    }
 }

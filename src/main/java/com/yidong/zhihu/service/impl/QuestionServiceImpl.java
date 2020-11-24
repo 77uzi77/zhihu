@@ -22,10 +22,26 @@ public class QuestionServiceImpl implements QuestionService {
         return question.getTitle() != null && questionMapper.add(question) == 1;
     }
 
+    /**
+     * 分页查询
+     */
     @Override
     public ResultBean<?> findPage(int pageNum, int pageSize) {
         PageHelper.startPage(pageNum, pageSize);
         List<Question> questionList = questionMapper.selectPage();
+        PageInfo<Question> pageList = new PageInfo<>(questionList);
+        return new ResultBean<>(pageList.getList());
+    }
+
+    /**
+     * 模糊查询
+     */
+    @Override
+    public ResultBean<?> findQuestion(int pageNum, int pageSize,String content) {
+        PageHelper.startPage(pageNum, pageSize);
+        // 拼接模糊查询
+        content = "%" + content + "%";
+        List<Question> questionList = questionMapper.selectPageBySearch(content);
         PageInfo<Question> pageList = new PageInfo<>(questionList);
         return new ResultBean<>(pageList.getList());
     }

@@ -1,17 +1,13 @@
 package com.yidong.zhihu.controller;
 
-import com.auth0.jwt.interfaces.DecodedJWT;
 import com.yidong.zhihu.entity.Question;
 import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.service.QuestionService;
 import com.yidong.zhihu.utils.JWTUtils;
-import io.lettuce.core.ScriptOutputType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import javax.servlet.http.HttpServletRequest;
-import java.util.Arrays;
-import java.util.List;
+
 
 @RestController
 @RequestMapping("question")
@@ -19,6 +15,9 @@ public class QuestionController {
     @Autowired
     private QuestionService questionService;
 
+    /**
+     *  提问
+     */
     @PostMapping("askQuestion")
     public ResultBean<String> askQuestion(HttpServletRequest request, @RequestBody Question question){
         String token = request.getHeader("token");
@@ -37,8 +36,19 @@ public class QuestionController {
         }
     }
 
+    /**
+     *  分页查询所有问题
+     */
     @GetMapping("findPage")
     public ResultBean<?> findPage(int pageNum, int pageSize){
         return questionService.findPage(pageNum,pageSize);
+    }
+
+    /**
+     *  模糊搜索问题
+     */
+    @GetMapping("findQuestion")
+    public ResultBean<?> findQuestion(int pageNum, int pageSize,String content){
+        return questionService.findQuestion(pageNum,pageSize,content);
     }
 }

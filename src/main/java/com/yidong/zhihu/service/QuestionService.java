@@ -9,4 +9,6 @@ public interface QuestionService {
     boolean askQuestion(Question question);
 
     ResultBean<?> findPage(int pageNum, int pageSize);
+
+    ResultBean<?> findQuestion(int pageNum, int pageSize,String content);
 }

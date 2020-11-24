@@ -1,11 +1,14 @@
 package com.yidong.zhihu.mapper;
 
 import com.yidong.zhihu.entity.Answer;
+import com.yidong.zhihu.entity.Question;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Mapper
 @Repository
@@ -18,4 +21,7 @@ public interface AnswerMapper {
 
     @Insert("insert into answer (content,auser_id,aquestion_id) values (#{content},#{auser_id},#{aquestion_id})")
     int addAnswer(Answer answer);
+
+    @Select("select * from answer where aquestion_id = #{aquestion_id}")
+    List<Answer> selectPageByQuestion(String aquestion_id);
 }

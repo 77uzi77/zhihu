@@ -15,7 +15,7 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("sendCode")
-    public ResultBean<String> sendEmail(@RequestBody String email){
+    public ResultBean<String> sendEmail(String email){
         if (userService.sendEmail(email)){
             return new ResultBean<>("发送验证码成功！请注意查收！");
         }else{

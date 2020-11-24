@@ -17,4 +17,6 @@ public interface QuestionMapper {
     @Select("select * from question")
     List<Question> selectPage();
 
+    @Select("select * from question where title like #{content} or detail like #{content}")
+    List<Question> selectPageBySearch(String content);
 }
