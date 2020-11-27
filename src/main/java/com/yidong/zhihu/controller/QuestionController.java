@@ -37,6 +37,9 @@ public class QuestionController {
         }
     }
 
+    /**
+     *  分页查询所有问题
+     */
     @GetMapping("findPage")
     public ResultBean<?> findPage(int pageNum, int pageSize){
         return questionService.findPage(pageNum,pageSize);
@@ -60,21 +63,11 @@ public class QuestionController {
         return new ResultBean<>(questionService.FindQuestionByTitle(title));
     }
 
-
-
+    /**
+     *  模糊搜索问题
+     */
+    @GetMapping("findQuestion")
+    public ResultBean<?> findQuestion(int pageNum, int pageSize,String content){
+        return questionService.findQuestion(pageNum,pageSize,content);
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

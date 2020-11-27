@@ -8,13 +8,12 @@ import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.mapper.QuestionMapper;
 import com.yidong.zhihu.service.QuestionService;
 import com.yidong.zhihu.utils.PageUtil;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Slf4j
+
 @Service
 public class QuestionServiceImpl implements QuestionService {
     @Autowired
@@ -26,6 +25,9 @@ public class QuestionServiceImpl implements QuestionService {
         return question.getTitle() != null && questionMapper.add(question) == 1;
     }
 
+    /**
+     * 分页查询
+     */
     @Override
     public ResultBean<?> findPage(int pageNum, int pageSize) {
         PageHelper.startPage(pageNum, pageSize);
@@ -52,5 +54,18 @@ public class QuestionServiceImpl implements QuestionService {
     @Override
     public String FindQuestionByTitle(String title) {
         return questionMapper.FindQuestionByTitle(title);
+    }
+
+    /**
+     * 模糊查询
+     */
+    @Override
+    public ResultBean<?> findQuestion(int pageNum, int pageSize,String content) {
+        PageHelper.startPage(pageNum, pageSize);
+        // 拼接模糊查询
+        content = "%" + content + "%";
+        List<Question> questionList = questionMapper.selectPageBySearch(content);
+        PageInfo<Question> pageList = new PageInfo<>(questionList);
+        return new ResultBean<>(pageList.getList());
     }
 }
