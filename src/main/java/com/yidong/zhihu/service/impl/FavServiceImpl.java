@@ -1,7 +1,11 @@
 package com.yidong.zhihu.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.yidong.zhihu.entity.Answer;
 import com.yidong.zhihu.entity.Fav;
 import com.yidong.zhihu.entity.ResultBean;
+import com.yidong.zhihu.entity.User;
 import com.yidong.zhihu.mapper.FavMapper;
 import com.yidong.zhihu.service.FavService;
 import com.yidong.zhihu.utils.RedisUtil;
@@ -77,6 +81,14 @@ public class FavServiceImpl implements FavService {
                 favMapper.addFav(fav);
             }
         }
+    }
+
+    @Override
+    public ResultBean<?> selectMyFavByPage(int pageNum, int pageSize, int user_id) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<Answer> myAnsList = favMapper.selectMyFavByPage(user_id);
+        PageInfo<Answer> pageList = new PageInfo<>(myAnsList);
+        return new ResultBean<>(pageList.getList());
     }
 
 

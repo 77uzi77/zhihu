@@ -1,0 +1,471 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"ALL\" />\r\n  </component>\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"bed8e52c-2b1e-484e-853e-8e8bf4182e12\" name=\"Default Changelist\" comment=\"login-register-CrossOrigin\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/ZhihuApplication.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/ZhihuApplication.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/AnswerController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/AnswerController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/QuestionController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/QuestionController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/UserController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/UserController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/ResultBean.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/ResultBean.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/QuestionMapper.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/QuestionMapper.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/UserMapper.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/UserMapper.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/QuestionService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/QuestionService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/UserService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/UserService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/QuestionServiceImpl.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/QuestionServiceImpl.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/UserServiceImpl.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/UserServiceImpl.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/application.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/application.yml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/yidong/zhihu/ZhihuApplicationTests.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/com/yidong/zhihu/ZhihuApplicationTests.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/application.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/application.yml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/ZhihuApplication.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/ZhihuApplication.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/QuestionController.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/QuestionController.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/UserController.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/UserController.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/QuestionMapper.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/QuestionMapper.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/UserMapper.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/UserMapper.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/QuestionService.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/QuestionService.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/QuestionServiceImpl.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/QuestionServiceImpl.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/UserServiceImpl.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/UserServiceImpl.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/2020-11-15T11-03-28_220-jvmRun1.dump\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/TEST-com.yidong.zhihu.ZhihuApplicationTests.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/surefire-reports/TEST-com.yidong.zhihu.ZhihuApplicationTests.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/surefire-reports/com.yidong.zhihu.ZhihuApplicationTests.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/surefire-reports/com.yidong.zhihu.ZhihuApplicationTests.txt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/com/yidong/zhihu/ZhihuApplicationTests.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/com/yidong/zhihu/ZhihuApplicationTests.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar.original\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar.original\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Rebase.Settings\">\r\n    <option name=\"ONTO\" value=\"refs/remotes/origin/master\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"localRepository\" value=\"C:\\maven\\apache-maven-3.6.3\\respository_zhihu_real\" />\r\n        <option name=\"mavenHome\" value=\"C:\\maven\\apache-maven-3.6.3\" />\r\n        <option name=\"userSettingsFile\" value=\"C:\\maven\\apache-maven-3.6.3\\conf\\settings.xml\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"MavenRunner\">\r\n    <option name=\"vmOptions\" value=\"-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1jSj8CaGDNcueEPceLS5gCLV4hS\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"RequestMappingsPanelOrder0\" value=\"0\" />\r\n    <property name=\"RequestMappingsPanelOrder1\" value=\"1\" />\r\n    <property name=\"RequestMappingsPanelWidth0\" value=\"75\" />\r\n    <property name=\"RequestMappingsPanelWidth1\" value=\"75\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"ToolWindowRun.ShowToolbar\" value=\"false\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\r\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"restartRequiresConfirmation\" value=\"false\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"MavenSettings\" />\r\n  </component>\r\n  <component name=\"ReactorSettings\">\r\n    <option name=\"notificationShown\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"com.yidong.zhihu\" />\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.yidong.zhihu.utils\" />\r\n      <recent name=\"com.yidong.zhihu.service.impl\" />\r\n      <recent name=\"com.yidong.zhihu.service\" />\r\n      <recent name=\"com.yidong.zhihu.config\" />\r\n      <recent name=\"com.yidong.zhihu.interceptor\" />\r\n    </key>\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\iamhe\\IdeaProjects\\zhihu\" />\r\n      <recent name=\"C:\\Users\\啊柒哟\\IdeaProjects\\zhihu\\src\\main\\java\\com\\yidong\\zhihu\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Spring Boot.ZhihuApplication\">\r\n    <configuration name=\"ZhihuApplicationTests\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"zhihu\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.yidong.zhihu.controller.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.yidong.zhihu\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.yidong.zhihu.ZhihuApplicationTests\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ZhihuApplicationTests.contextLoads\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"zhihu\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.yidong.zhihu.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.yidong.zhihu\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.yidong.zhihu.ZhihuApplicationTests\" />\r\n      <option name=\"METHOD_NAME\" value=\"contextLoads\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ZhihuApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"zhihu\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.yidong.zhihu.ZhihuApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.ZhihuApplicationTests.contextLoads\" />\r\n        <item itemvalue=\"JUnit.ZhihuApplicationTests\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"bed8e52c-2b1e-484e-853e-8e8bf4182e12\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1603804225588</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1603804225588</updated>\r\n      <workItem from=\"1603804232589\" duration=\"6496000\" />\r\n      <workItem from=\"1603860647035\" duration=\"141000\" />\r\n      <workItem from=\"1603860812377\" duration=\"1784000\" />\r\n      <workItem from=\"1603862649962\" duration=\"10000\" />\r\n      <workItem from=\"1603882288503\" duration=\"147000\" />\r\n      <workItem from=\"1603882478118\" duration=\"4921000\" />\r\n      <workItem from=\"1603947751418\" duration=\"8420000\" />\r\n      <workItem from=\"1603957670809\" duration=\"4170000\" />\r\n      <workItem from=\"1603961861663\" duration=\"7545000\" />\r\n      <workItem from=\"1604070828682\" duration=\"1549000\" />\r\n      <workItem from=\"1604113976948\" duration=\"3501000\" />\r\n      <workItem from=\"1604218641354\" duration=\"6795000\" />\r\n      <workItem from=\"1604318852399\" duration=\"3600000\" />\r\n      <workItem from=\"1604423359909\" duration=\"1383000\" />\r\n      <workItem from=\"1604466893008\" duration=\"4244000\" />\r\n      <workItem from=\"1604503581058\" duration=\"3339000\" />\r\n      <workItem from=\"1604624739077\" duration=\"12830000\" />\r\n      <workItem from=\"1604646826048\" duration=\"2494000\" />\r\n      <workItem from=\"1604668181619\" duration=\"8399000\" />\r\n      <workItem from=\"1604739663924\" duration=\"13275000\" />\r\n      <workItem from=\"1604803815420\" duration=\"7328000\" />\r\n      <workItem from=\"1605273126588\" duration=\"9322000\" />\r\n      <workItem from=\"1605321537855\" duration=\"6577000\" />\r\n      <workItem from=\"1605335910867\" duration=\"3070000\" />\r\n      <workItem from=\"1605345438982\" duration=\"6484000\" />\r\n      <workItem from=\"1605406002254\" duration=\"13361000\" />\r\n      <workItem from=\"1605450742613\" duration=\"7282000\" />\r\n      <workItem from=\"1605486515648\" duration=\"1900000\" />\r\n      <workItem from=\"1605524133187\" duration=\"1882000\" />\r\n      <workItem from=\"1605786931359\" duration=\"10241000\" />\r\n      <workItem from=\"1605854262289\" duration=\"604000\" />\r\n      <workItem from=\"1605877990123\" duration=\"5964000\" />\r\n      <workItem from=\"1605961225891\" duration=\"1995000\" />\r\n      <workItem from=\"1606132177015\" duration=\"4320000\" />\r\n      <workItem from=\"1606210739447\" duration=\"2385000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"first\">\r\n      <created>1603961270433</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1603961270433</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"first\">\r\n      <created>1604322657951</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1604322657951</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"login-1\">\r\n      <created>1604720159243</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1604720159243</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"login-1.0\">\r\n      <created>1604764161092</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1604764161092</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"login-1.0\">\r\n      <created>1605334729239</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1605334729239</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"login-register-CrossOrigin\">\r\n      <created>1605411775406</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1605411775406</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"first\" />\r\n    <MESSAGE value=\"login-1\" />\r\n    <MESSAGE value=\"login-1.0\" />\r\n    <MESSAGE value=\"login-register-CrossOrigin\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"login-register-CrossOrigin\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"261\" y=\"0\" key=\"#Inspections\" timestamp=\"1604467851180\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"261\" y=\"0\" key=\"#Inspections/0.0.1536.824@0.0.1536.824\" timestamp=\"1604467851180\" />\r\n    <state x=\"223\" y=\"67\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1604642340779\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"223\" y=\"67\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1604642340779\" />\r\n    <state x=\"663\" y=\"69\" key=\"#com.intellij.ide.util.MemberChooser\" timestamp=\"1606212102684\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"530\" y=\"55\" key=\"#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824\" timestamp=\"1606136137846\" />\r\n    <state x=\"663\" y=\"69\" key=\"#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1606212102684\" />\r\n    <state x=\"334\" y=\"325\" key=\"#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog\" timestamp=\"1604720356211\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"334\" y=\"325\" key=\"#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1604720356211\" />\r\n    <state x=\"722\" y=\"537\" width=\"448\" height=\"272\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes\" timestamp=\"1604648356841\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"722\" y=\"537\" width=\"448\" height=\"272\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824\" timestamp=\"1604648356841\" />\r\n    <state x=\"193\" y=\"0\" key=\"CommitChangelistDialog2\" timestamp=\"1605334728181\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"193\" y=\"0\" key=\"CommitChangelistDialog2/0.0.1536.824@0.0.1536.824\" timestamp=\"1605334728181\" />\r\n    <state x=\"499\" y=\"94\" key=\"FileChooserDialogImpl\" timestamp=\"1605961259932\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"499\" y=\"94\" key=\"FileChooserDialogImpl/0.0.1536.824@0.0.1536.824\" timestamp=\"1605961259932\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1606212727294\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"251\" key=\"GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824\" timestamp=\"1606137080887\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1606212727294\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.0.center\" timestamp=\"1606212727293\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"251\" key=\"GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824\" timestamp=\"1606137080886\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1606212727293\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.0.left\" timestamp=\"1606212727289\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"251\" key=\"GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824\" timestamp=\"1606137080886\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1606212727289\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.0.right\" timestamp=\"1606212727294\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"251\" key=\"GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824\" timestamp=\"1606137080887\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1606212727294\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1606212727294\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"251\" key=\"GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824\" timestamp=\"1606137080887\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1606212727294\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.1.center\" timestamp=\"1606212727294\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"251\" key=\"GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824\" timestamp=\"1606137080887\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1606212727294\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.1.left\" timestamp=\"1606212727294\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"251\" key=\"GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824\" timestamp=\"1606137080887\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1606212727294\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.1.right\" timestamp=\"1606212727294\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"251\" key=\"GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824\" timestamp=\"1606137080887\" />\r\n    <state width=\"1877\" height=\"334\" key=\"GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1606212727294\" />\r\n    <state width=\"1493\" height=\"347\" key=\"GridCell.Tab.2.bottom\" timestamp=\"1605801854135\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"347\" key=\"GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824\" timestamp=\"1605801854135\" />\r\n    <state width=\"1493\" height=\"347\" key=\"GridCell.Tab.2.center\" timestamp=\"1605801854135\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"347\" key=\"GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824\" timestamp=\"1605801854135\" />\r\n    <state width=\"1493\" height=\"347\" key=\"GridCell.Tab.2.left\" timestamp=\"1605801854135\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"347\" key=\"GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824\" timestamp=\"1605801854135\" />\r\n    <state width=\"1493\" height=\"347\" key=\"GridCell.Tab.2.right\" timestamp=\"1605801854135\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"347\" key=\"GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824\" timestamp=\"1605801854135\" />\r\n    <state x=\"194\" y=\"0\" key=\"Maven.ArtifactSearchDialog\" timestamp=\"1603882682916\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"194\" y=\"0\" key=\"Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1603882682916\" />\r\n    <state x=\"154\" y=\"0\" key=\"SettingsEditor\" timestamp=\"1605321547535\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"154\" y=\"0\" key=\"SettingsEditor/0.0.1536.824@0.0.1536.824\" timestamp=\"1605321547535\" />\r\n    <state x=\"476\" y=\"50\" key=\"VCS.ChangeListViewerDialog\" timestamp=\"1604720475344\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"476\" y=\"50\" key=\"VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1604720475344\" />\r\n    <state x=\"261\" y=\"81\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1605411777794\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"261\" y=\"81\" key=\"Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824\" timestamp=\"1605411777794\" />\r\n    <state x=\"389\" y=\"85\" key=\"VcsDiffUtil.ChangesDialog\" timestamp=\"1604720350218\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"389\" y=\"85\" key=\"VcsDiffUtil.ChangesDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1604720350218\" />\r\n    <state x=\"399\" y=\"196\" key=\"com.intellij.ide.util.TipDialog\" timestamp=\"1605335911071\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"399\" y=\"196\" key=\"com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1605335911071\" />\r\n    <state x=\"573\" y=\"325\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1605406034993\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"573\" y=\"325\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824\" timestamp=\"1605406034993\" />\r\n    <state x=\"470\" y=\"64\" key=\"com.intellij.testIntegration.createTest.CreateTestDialog\" timestamp=\"1603860665955\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"470\" y=\"64\" key=\"com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1603860665955\" />\r\n    <state x=\"93\" y=\"93\" width=\"1350\" height=\"638\" key=\"dock-window-1\" timestamp=\"1603950307344\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"93\" y=\"93\" width=\"1350\" height=\"638\" key=\"dock-window-1/0.0.1536.824@0.0.1536.824\" timestamp=\"1603950307344\" />\r\n    <state x=\"530\" y=\"159\" key=\"git4idea.merge.GitMergeDialog\" timestamp=\"1604720528067\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"530\" y=\"159\" key=\"git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1604720528067\" />\r\n    <state x=\"457\" y=\"159\" key=\"git4idea.merge.GitPullDialog\" timestamp=\"1604323050047\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"457\" y=\"159\" key=\"git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1604323050047\" />\r\n    <state x=\"536\" y=\"249\" key=\"git4idea.rebase.GitRebaseDialog\" timestamp=\"1604720481328\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"536\" y=\"249\" key=\"git4idea.rebase.GitRebaseDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1604720481328\" />\r\n    <state x=\"451\" y=\"94\" key=\"git4idea.rebase.GitRebaseEditor\" timestamp=\"1604720490928\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"451\" y=\"94\" key=\"git4idea.rebase.GitRebaseEditor/0.0.1536.824@0.0.1536.824\" timestamp=\"1604720490928\" />\r\n    <state x=\"347\" y=\"-1\" width=\"840\" height=\"1034\" key=\"search.everywhere.popup\" timestamp=\"1603959361557\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"347\" y=\"-1\" width=\"840\" height=\"1034\" key=\"search.everywhere.popup/0.0.1536.824@0.0.1536.824\" timestamp=\"1603959361557\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/AnswerServiceImpl.java</url>\r\n          <line>15</line>\r\n          <option name=\"timeStamp\" value=\"5\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision f323de0a4fe898c321ac9959d8833f6f5af0f19f)
++++ .idea/workspace.xml	(date 1606486405723)
+@@ -22,37 +22,27 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="bed8e52c-2b1e-484e-853e-8e8bf4182e12" name="Default Changelist" comment="login-register-CrossOrigin">
++    <list default="true" id="bed8e52c-2b1e-484e-853e-8e8bf4182e12" name="Default Changelist" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/ZhihuApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/ZhihuApplication.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/AnswerController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/QuestionController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/UserController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/ResultBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/ResultBean.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/config/MybatisPlusConfig.java" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/QuestionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/QuestionMapper.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/UserMapper.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/QuestionService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/UserService.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/FileServiceImpl.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/QuestionServiceImpl.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/UserServiceImpl.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yidong/zhihu/ZhihuApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yidong/zhihu/ZhihuApplicationTests.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/ZhihuApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/ZhihuApplication.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/config/RedisConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/config/RedisConfig$1.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/config/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/config/RedisConfig.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/QuestionController.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/UserController.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/entity/ResultBean$ResultBeanBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/entity/ResultBean$ResultBeanBuilder.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/entity/ResultBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/entity/ResultBean.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/filter/AllowOriginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/filter/AllowOriginFilter.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/QuestionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/QuestionMapper.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/UserMapper.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/QuestionService.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/AnswerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/AnswerServiceImpl.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/FileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/FileServiceImpl.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/QuestionServiceImpl.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/UserServiceImpl.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-11-15T11-03-28_220-jvmRun1.dump" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.yidong.zhihu.ZhihuApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.yidong.zhihu.ZhihuApplicationTests.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.yidong.zhihu.ZhihuApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.yidong.zhihu.ZhihuApplicationTests.txt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/yidong/zhihu/ZhihuApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/yidong/zhihu/ZhihuApplicationTests.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -82,9 +72,14 @@
+     <option name="generalSettings">
+       <MavenGeneralSettings>
+         <option name="localRepository" value="C:\maven\apache-maven-3.6.3\respository_zhihu_real" />
+-        <option name="mavenHome" value="C:\maven\apache-maven-3.6.3" />
++        <option name="mavenHome" value="C:/maven/apache-maven-3.6.3" />
+         <option name="userSettingsFile" value="C:\maven\apache-maven-3.6.3\conf\settings.xml" />
+       </MavenGeneralSettings>
++    </option>
++    <option name="importingSettings">
++      <MavenImportingSettings>
++        <option name="importAutomatically" value="true" />
++      </MavenImportingSettings>
+     </option>
+   </component>
+   <component name="MavenRunner">
+@@ -108,7 +103,7 @@
+     <property name="ToolWindowRun.ShowToolbar" value="false" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/demand" />
+     <property name="node.js.detected.package.eslint" value="true" />
+     <property name="node.js.detected.package.tslint" value="true" />
+     <property name="node.js.path.for.package.eslint" value="project" />
+@@ -118,9 +113,6 @@
+     <property name="restartRequiresConfirmation" value="false" />
+     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+   </component>
+-  <component name="ReactorSettings">
+-    <option name="notificationShown" value="true" />
+-  </component>
+   <component name="RecentsManager">
+     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+       <recent name="com.yidong.zhihu" />
+@@ -128,13 +120,11 @@
+     </key>
+     <key name="CopyClassDialog.RECENTS_KEY">
+       <recent name="com.yidong.zhihu.utils" />
+-      <recent name="com.yidong.zhihu.service.impl" />
+-      <recent name="com.yidong.zhihu.service" />
+-      <recent name="com.yidong.zhihu.config" />
+       <recent name="com.yidong.zhihu.interceptor" />
++      <recent name="com.yidong.zhihu.config" />
++      <recent name="com.yidong.zhihu.entity" />
+     </key>
+     <key name="CopyFile.RECENT_KEYS">
+-      <recent name="C:\Users\iamhe\IdeaProjects\zhihu" />
+       <recent name="C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu" />
+     </key>
+   </component>
+@@ -154,22 +144,6 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="ZhihuApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="zhihu" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="com.yidong.zhihu.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="com.yidong.zhihu" />
+-      <option name="MAIN_CLASS_NAME" value="com.yidong.zhihu.ZhihuApplicationTests" />
+-      <option name="METHOD_NAME" value="contextLoads" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+     <configuration name="ZhihuApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+       <module name="zhihu" />
+       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yidong.zhihu.ZhihuApplication" />
+@@ -179,12 +153,23 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="JUnit.ZhihuApplicationTests.contextLoads" />
+         <item itemvalue="JUnit.ZhihuApplicationTests" />
+       </list>
+     </recent_temporary>
+   </component>
+-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="ServiceViewManager">
++    <option name="viewStates">
++      <list>
++        <serviceView>
++          <treeState>
++            <expand />
++            <select />
++          </treeState>
++        </serviceView>
++      </list>
++    </option>
++  </component>
++  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+   <component name="SvnConfiguration">
+     <configuration />
+   </component>
+@@ -219,17 +204,17 @@
+       <workItem from="1605273126588" duration="9322000" />
+       <workItem from="1605321537855" duration="6577000" />
+       <workItem from="1605335910867" duration="3070000" />
+-      <workItem from="1605345438982" duration="6484000" />
+-      <workItem from="1605406002254" duration="13361000" />
+-      <workItem from="1605450742613" duration="7282000" />
+-      <workItem from="1605486515648" duration="1900000" />
+-      <workItem from="1605524133187" duration="1882000" />
+-      <workItem from="1605786931359" duration="10241000" />
+-      <workItem from="1605854262289" duration="604000" />
+-      <workItem from="1605877990123" duration="5964000" />
+-      <workItem from="1605961225891" duration="1995000" />
+-      <workItem from="1606132177015" duration="4320000" />
+-      <workItem from="1606210739447" duration="2385000" />
++      <workItem from="1605345438982" duration="6787000" />
++      <workItem from="1605364183284" duration="4882000" />
++      <workItem from="1605371383714" duration="424000" />
++      <workItem from="1605414600813" duration="483000" />
++      <workItem from="1605415751106" duration="5423000" />
++      <workItem from="1605429094679" duration="4444000" />
++      <workItem from="1605592695793" duration="12898000" />
++      <workItem from="1605606995926" duration="6040000" />
++      <workItem from="1605854086461" duration="2651000" />
++      <workItem from="1606013038913" duration="3304000" />
++      <workItem from="1606217285648" duration="2426000" />
+     </task>
+     <task id="LOCAL-00001" summary="first">
+       <created>1603961270433</created>
+@@ -266,152 +251,168 @@
+       <option name="project" value="LOCAL" />
+       <updated>1605334729239</updated>
+     </task>
+-    <task id="LOCAL-00006" summary="login-register-CrossOrigin">
+-      <created>1605411775406</created>
++    <task id="LOCAL-00006" summary="question-answer1.0">
++      <created>1605359915555</created>
+       <option name="number" value="00006" />
+       <option name="presentableId" value="LOCAL-00006" />
+       <option name="project" value="LOCAL" />
+-      <updated>1605411775406</updated>
++      <updated>1605359915555</updated>
++    </task>
++    <task id="LOCAL-00007" summary="question-answer2.0">
++      <created>1606217364178</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1606217364178</updated>
+     </task>
+-    <option name="localTasksCounter" value="7" />
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="3" />
++    <option name="version" value="1" />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+     <option name="TAB_STATES">
+       <map>
+         <entry key="MAIN">
+           <value>
+-            <State />
++            <State>
++              <option name="COLUMN_ORDER" />
++            </State>
+           </value>
+         </entry>
+       </map>
+     </option>
+-    <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="first" />
+     <MESSAGE value="login-1" />
+     <MESSAGE value="login-1.0" />
+-    <MESSAGE value="login-register-CrossOrigin" />
+-    <option name="LAST_COMMIT_MESSAGE" value="login-register-CrossOrigin" />
++    <MESSAGE value="question-answer1.0" />
++    <MESSAGE value="question-answer2.0" />
++    <option name="LAST_COMMIT_MESSAGE" value="question-answer2.0" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="261" y="0" key="#Inspections" timestamp="1604467851180">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="261" y="0" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1604467851180" />
++    <state x="261" y="0" key="#Notifications" timestamp="1606220627438">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="261" y="0" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1606220627438" />
+     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604642340779">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604642340779" />
+-    <state x="663" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1606212102684">
+-      <screen x="0" y="0" width="1920" height="1040" />
++    <state x="530" y="55" key="#com.intellij.ide.util.MemberChooser" timestamp="1605855533892">
++      <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="530" y="55" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606136137846" />
+-    <state x="663" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606212102684" />
+-    <state x="334" y="325" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604720356211">
++    <state x="530" y="55" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605855533892" />
++    <state x="334" y="325" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605855806648">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="334" y="325" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1604720356211" />
+-    <state x="722" y="537" width="448" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604648356841">
++    <state x="334" y="325" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1605855806648" />
++    <state x="722" y="482" width="490" height="342" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605857683156">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="722" y="537" width="448" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1604648356841" />
+-    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1605334728181">
++    <state x="722" y="482" width="490" height="342" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1605857683156" />
++    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1606220656563">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605334728181" />
+-    <state x="499" y="94" key="FileChooserDialogImpl" timestamp="1605961259932">
++    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606220656563" />
++    <state x="499" y="94" key="FileChooserDialogImpl" timestamp="1604673410905">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="499" y="94" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605961259932" />
+-    <state width="1877" height="334" key="GridCell.Tab.0.bottom" timestamp="1606212727294">
+-      <screen x="0" y="0" width="1920" height="1040" />
++    <state x="499" y="94" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604673410905" />
++    <state width="1483" height="192" key="GridCell.Tab.0.bottom" timestamp="1606223551790">
++      <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1493" height="251" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606137080887" />
+-    <state width="1877" height="334" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606212727294" />
+-    <state width="1877" height="334" key="GridCell.Tab.0.center" timestamp="1606212727293">
+-      <screen x="0" y="0" width="1920" height="1040" />
++    <state width="1483" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606223551790" />
++    <state width="1483" height="192" key="GridCell.Tab.0.center" timestamp="1606223551789">
++      <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1493" height="251" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606137080886" />
+-    <state width="1877" height="334" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606212727293" />
+-    <state width="1877" height="334" key="GridCell.Tab.0.left" timestamp="1606212727289">
+-      <screen x="0" y="0" width="1920" height="1040" />
++    <state width="1483" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606223551789" />
++    <state width="1483" height="192" key="GridCell.Tab.0.left" timestamp="1606223551789">
++      <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1493" height="251" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606137080886" />
+-    <state width="1877" height="334" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606212727289" />
+-    <state width="1877" height="334" key="GridCell.Tab.0.right" timestamp="1606212727294">
+-      <screen x="0" y="0" width="1920" height="1040" />
++    <state width="1483" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606223551789" />
++    <state width="1483" height="192" key="GridCell.Tab.0.right" timestamp="1606223551790">
++      <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1493" height="251" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606137080887" />
+-    <state width="1877" height="334" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606212727294" />
+-    <state width="1877" height="334" key="GridCell.Tab.1.bottom" timestamp="1606212727294">
+-      <screen x="0" y="0" width="1920" height="1040" />
++    <state width="1483" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606223551790" />
++    <state width="1483" height="192" key="GridCell.Tab.1.bottom" timestamp="1606223551790">
++      <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1493" height="251" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606137080887" />
+-    <state width="1877" height="334" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606212727294" />
+-    <state width="1877" height="334" key="GridCell.Tab.1.center" timestamp="1606212727294">
+-      <screen x="0" y="0" width="1920" height="1040" />
++    <state width="1483" height="192" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606223551790" />
++    <state width="1483" height="192" key="GridCell.Tab.1.center" timestamp="1606223551790">
++      <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1493" height="251" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606137080887" />
+-    <state width="1877" height="334" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606212727294" />
+-    <state width="1877" height="334" key="GridCell.Tab.1.left" timestamp="1606212727294">
+-      <screen x="0" y="0" width="1920" height="1040" />
++    <state width="1483" height="192" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606223551790" />
++    <state width="1483" height="192" key="GridCell.Tab.1.left" timestamp="1606223551790">
++      <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1493" height="251" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606137080887" />
+-    <state width="1877" height="334" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606212727294" />
+-    <state width="1877" height="334" key="GridCell.Tab.1.right" timestamp="1606212727294">
+-      <screen x="0" y="0" width="1920" height="1040" />
++    <state width="1483" height="192" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606223551790" />
++    <state width="1483" height="192" key="GridCell.Tab.1.right" timestamp="1606223551790">
++      <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1493" height="251" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606137080887" />
+-    <state width="1877" height="334" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606212727294" />
+-    <state width="1493" height="347" key="GridCell.Tab.2.bottom" timestamp="1605801854135">
++    <state width="1483" height="192" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606223551790" />
++    <state width="1483" height="234" key="GridCell.Tab.2.bottom" timestamp="1605629359162">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1493" height="347" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605801854135" />
+-    <state width="1493" height="347" key="GridCell.Tab.2.center" timestamp="1605801854135">
++    <state width="1483" height="234" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605629359162" />
++    <state width="1483" height="234" key="GridCell.Tab.2.center" timestamp="1605629359162">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1493" height="347" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1605801854135" />
+-    <state width="1493" height="347" key="GridCell.Tab.2.left" timestamp="1605801854135">
++    <state width="1483" height="234" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1605629359162" />
++    <state width="1483" height="234" key="GridCell.Tab.2.left" timestamp="1605629359162">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1493" height="347" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1605801854135" />
+-    <state width="1493" height="347" key="GridCell.Tab.2.right" timestamp="1605801854135">
++    <state width="1483" height="234" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1605629359162" />
++    <state width="1483" height="234" key="GridCell.Tab.2.right" timestamp="1605629359162">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state width="1493" height="347" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1605801854135" />
++    <state width="1483" height="234" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1605629359162" />
+     <state x="194" y="0" key="Maven.ArtifactSearchDialog" timestamp="1603882682916">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="194" y="0" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1603882682916" />
++    <state x="147" y="70" key="MergeDialog" timestamp="1606222615375">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="147" y="70" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1606222615375" />
++    <state x="411" y="59" key="MultipleFileMergeDialog" timestamp="1606222615385">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="411" y="59" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1606222615385" />
+     <state x="154" y="0" key="SettingsEditor" timestamp="1605321547535">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="154" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605321547535" />
+-    <state x="476" y="50" key="VCS.ChangeListViewerDialog" timestamp="1604720475344">
++    <state x="1029" y="119" key="VCS.ChangeListViewerDialog" timestamp="1606222154908">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="476" y="50" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1604720475344" />
+-    <state x="261" y="81" key="Vcs.Push.Dialog.v2" timestamp="1605411777794">
++    <state x="1029" y="119" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1606222154908" />
++    <state x="261" y="81" key="Vcs.Push.Dialog.v2" timestamp="1606217391939">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="261" y="81" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605411777794" />
++    <state x="261" y="81" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606217391939" />
+     <state x="389" y="85" key="VcsDiffUtil.ChangesDialog" timestamp="1604720350218">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="389" y="85" key="VcsDiffUtil.ChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604720350218" />
+-    <state x="399" y="196" key="com.intellij.ide.util.TipDialog" timestamp="1605335911071">
++    <state x="93" y="93" width="1350" height="638" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1606223487445">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="93" y="93" width="1350" height="638" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606223487445" />
++    <state x="399" y="196" key="com.intellij.ide.util.TipDialog" timestamp="1606217321857">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="399" y="196" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1605335911071" />
+-    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605406034993">
++    <state x="399" y="196" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1606217321857" />
++    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604674420550">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605406034993" />
++    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604674420550" />
+     <state x="470" y="64" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1603860665955">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+@@ -420,14 +421,14 @@
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="93" y="93" width="1350" height="638" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1603950307344" />
+-    <state x="530" y="159" key="git4idea.merge.GitMergeDialog" timestamp="1604720528067">
++    <state x="530" y="159" key="git4idea.merge.GitMergeDialog" timestamp="1606222029074">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="530" y="159" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1604720528067" />
+-    <state x="457" y="159" key="git4idea.merge.GitPullDialog" timestamp="1604323050047">
++    <state x="530" y="159" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1606222029074" />
++    <state x="457" y="159" key="git4idea.merge.GitPullDialog" timestamp="1606221987028">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="457" y="159" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1604323050047" />
++    <state x="457" y="159" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1606221987028" />
+     <state x="536" y="249" key="git4idea.rebase.GitRebaseDialog" timestamp="1604720481328">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+@@ -436,20 +437,13 @@
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="451" y="94" key="git4idea.rebase.GitRebaseEditor/0.0.1536.824@0.0.1536.824" timestamp="1604720490928" />
+-    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1603959361557">
++    <state x="509" y="230" key="git4idea.ui.GitUnstashDialog" timestamp="1606221770667">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+-    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603959361557" />
+-  </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/AnswerServiceImpl.java</url>
+-          <line>15</line>
+-          <option name="timeStamp" value="5" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
++    <state x="509" y="230" key="git4idea.ui.GitUnstashDialog/0.0.1536.824@0.0.1536.824" timestamp="1606221770667" />
++    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1605607527293">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605607527293" />
+   </component>
+ </project>
+\ No newline at end of file

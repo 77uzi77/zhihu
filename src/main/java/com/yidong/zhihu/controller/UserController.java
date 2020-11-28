@@ -46,4 +46,25 @@ public class UserController {
         return new ResultBean<>("请求成功！");/*map*/
     }
 
+    //查询我的关注
+    @GetMapping("findMyFos")
+    public ResultBean<?> findMyAns(int pageNum, int pageSize,int follower_id) {
+        return userService.selectMyFosByPage(pageNum, pageSize, follower_id);
+    }
+
+    //个人主页：查看个人基本信息
+    @GetMapping("findSelfMessage")
+    public ResultBean<?> findSelfMessage(String username) {
+        return new ResultBean<>(userService.selectSelfMessage(username));
+    }
+
+    //个人主页：编辑个人基本信息
+    @PostMapping("editSelfMessage")
+    public ResultBean<String> editSelfMessage(int id, @RequestBody String message) {
+        userService.editSelfMessage(id, message);
+        return new ResultBean<>("个人信息编辑成功！");
+    }
+
+    //点击其他用户名昵称，访问他人主页
+
 }

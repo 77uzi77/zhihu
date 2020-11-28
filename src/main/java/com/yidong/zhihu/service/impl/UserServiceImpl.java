@@ -1,6 +1,10 @@
 package com.yidong.zhihu.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.entity.User;
 import com.yidong.zhihu.entity.vo.UserVo;
 import com.yidong.zhihu.exception.bizException.BizException;
@@ -13,8 +17,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -120,6 +126,25 @@ public class UserServiceImpl implements UserService {
         obj.put("userInfo",userDB);
 
         return  obj;
+    }
+
+    @Override
+    public ResultBean<?> selectMyFosByPage(int pageNum, int pageSize, int follower_id) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<User> myAnsList = userMapper.selectMyFosByPage(follower_id);
+        PageInfo<User> pageList = new PageInfo<>(myAnsList);
+        return new ResultBean<>(pageList.getList());
+    }
+
+    @Override
+    public ResultBean<User> selectSelfMessage(String username) {
+        return new ResultBean<User>(userMapper.selectSelfMessage(username));
+    }
+
+    @Override
+    public void editSelfMessage(int id , @RequestBody String message) {
+        System.out.println(message);
+        userMapper.editSelfMessage(id, message);
     }
 
 }

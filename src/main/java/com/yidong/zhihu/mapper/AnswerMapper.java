@@ -24,4 +24,8 @@ public interface AnswerMapper {
 
     @Select("select * from answer where aquestion_id = #{aquestion_id}")
     List<Answer> selectPageByQuestion(String aquestion_id);
+
+    //个人主页：分页查询我的回答
+    @Select("select * from answer where auser_id = #{auser_id}")
+    List<Answer> selectMyAnsByPage(int auser_id);
 }

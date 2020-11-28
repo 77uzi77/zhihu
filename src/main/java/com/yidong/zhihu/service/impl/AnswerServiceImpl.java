@@ -42,4 +42,12 @@ public class AnswerServiceImpl implements AnswerService {
         PageInfo<Answer> pageList = new PageInfo<>(answerList);
         return new ResultBean<>(pageList.getList());
     }
+
+    @Override
+    public ResultBean<?> selectMyAnsByPage(int pageNum, int pageSize, int auser_id) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<Answer> myAnsList = answerMapper.selectMyAnsByPage(auser_id);
+        PageInfo<Answer> pageList = new PageInfo<>(myAnsList);
+        return new ResultBean<>(pageList.getList());
+    }
 }
