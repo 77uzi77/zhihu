@@ -40,19 +40,27 @@ public class QuestionController {
     /**
      *  分页查询所有问题
      */
-    @GetMapping("findPage")
+   /* @GetMapping("findPage")
     public ResultBean<?> findPage(int pageNum, int pageSize){
         return questionService.findPage(pageNum,pageSize);
-    }
+    }*/
 
     /**
      * 查询分页数据
      */
-    @GetMapping("findMyQueByPage")
+  /*  @GetMapping("findMyQueByPage")
     public ResultBean<?> findMyQueByPage(@RequestParam(name = "currentPage", defaultValue = "1") String currentPage,
                                          @RequestParam(name = "pageSize", defaultValue = "3") String pageSize,
                                          @RequestParam(name = "username", defaultValue = "") String username){
         return new ResultBean<>(questionService.findMyQueByPage(currentPage, pageSize,username));
+    }*/
+
+    /**
+     * 个人主页：我的提问
+     */
+    @GetMapping("findMyQueByPage")
+    public ResultBean<?> findMyQueByPage(int pageNum, int pageSize,String username) {
+        return questionService.selectMyQueByPage(pageNum, pageSize, username);
     }
 
     /**

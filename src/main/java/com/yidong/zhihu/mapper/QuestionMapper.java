@@ -1,6 +1,7 @@
 package com.yidong.zhihu.mapper;
 
 import com.yidong.zhihu.entity.Question;
+import com.yidong.zhihu.entity.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -18,13 +19,17 @@ public interface QuestionMapper{
     @Select("select * from question")
     List<Question> selectPage();
 
-    // 分页查询 我的提问 总记录数
+    /*// 分页查询 我的提问 总记录数
     @Select("select count(*) from question where quser_name = #{quser_name}")
     int findTotalCount(String quser_name);
 
     // 分页查询 我的提问 每页记录
     @Select("select * from question where quser_name = #{quser_name}  limit #{start},#{rows}")
-    List<Question> findByPage(int start, int rows, String quser_name);
+    List<Question> findByPage(int start, int rows, String quser_name);*/
+
+    //分页查询：个人主页 我的提问
+    @Select("select * from question where quser_name = #{quser_name}")
+    List<Question> selectMyQueByPage(String quser_name);
 
     // 根据标题查找对应的question实体
     @Select("select * from question where title = #{title}")

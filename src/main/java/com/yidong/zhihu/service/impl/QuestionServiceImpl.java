@@ -5,6 +5,7 @@ import com.github.pagehelper.PageInfo;
 import com.yidong.zhihu.entity.PageBean;
 import com.yidong.zhihu.entity.Question;
 import com.yidong.zhihu.entity.ResultBean;
+import com.yidong.zhihu.entity.User;
 import com.yidong.zhihu.mapper.QuestionMapper;
 import com.yidong.zhihu.service.QuestionService;
 import com.yidong.zhihu.utils.PageUtil;
@@ -36,7 +37,7 @@ public class QuestionServiceImpl implements QuestionService {
         return new ResultBean<>(pageList.getList());
     }
 
-    @Override
+   /* @Override
     public PageBean<Question> findMyQueByPage(String currentPage, String pageSize, String quser_name) {
         //设置总记录数
         int totalCount = questionMapper.findTotalCount(quser_name);
@@ -49,6 +50,14 @@ public class QuestionServiceImpl implements QuestionService {
         pb.setList(list);
 
         return pb;
+    }*/
+
+    @Override
+    public ResultBean<?> selectMyQueByPage(int pageNum, int pageSize, String username) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<Question> myAnsList = questionMapper.selectMyQueByPage(username);
+        PageInfo<Question> pageList = new PageInfo<>(myAnsList);
+        return new ResultBean<>(pageList.getList());
     }
 
     @Override
@@ -68,4 +77,6 @@ public class QuestionServiceImpl implements QuestionService {
         PageInfo<Question> pageList = new PageInfo<>(questionList);
         return new ResultBean<>(pageList.getList());
     }
+
+
 }
