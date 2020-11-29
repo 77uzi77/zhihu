@@ -34,4 +34,10 @@ public class FavController {
     public ResultBean<?> favCount(@RequestParam String answerId){
         return favService.favCount(answerId);
     }
+
+    //查询我的关注
+    @GetMapping("findMyFav")
+    public ResultBean<?> findMyAns(int pageNum, int pageSize,int user_id) {
+        return favService.selectMyFavByPage(pageNum, pageSize, user_id);
+    }
 }

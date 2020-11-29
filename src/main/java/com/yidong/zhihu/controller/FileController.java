@@ -17,6 +17,7 @@ public class FileController {
     @Autowired
     private FileService fileService;
 
+
     //上传头像
     @PostMapping("/uploadUserPhoto")
     @ResponseBody
@@ -24,4 +25,10 @@ public class FileController {
         return new ResultBean<>(fileService.insertUserPhoto(username,file));
     }
 
+    //上传头像
+    @PostMapping("/uploadBackgroundPhoto")
+    @ResponseBody
+    public ResultBean<String> uploadBackgroundPhoto(String username , @RequestParam("file") MultipartFile file){
+        return new ResultBean<>(fileService.insertBackgroundPhoto(username,file));
+    }
 }

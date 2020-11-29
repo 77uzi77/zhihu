@@ -18,9 +18,6 @@ public class AnswerController {
     @Autowired
     private AnswerService answerService;
 
-    /**
-     *  回答问题
-     */
     @PostMapping("answerQuestion")
     public ResultBean<String> answerQuestion(HttpServletRequest request,@RequestBody Answer answer){
         System.out.println(answer);
@@ -32,13 +29,11 @@ public class AnswerController {
         }else{
             return new ResultBean<>("回答失败！");
         }
+
     }
 
-    /**
-     *  根据提问id 查询该问题下所有回答
-     */
-    @GetMapping("findAnswer")
-    public ResultBean<?> findAnswer(int pageNum, int pageSize,String aquestion_id){
-        return answerService.findAnswer(pageNum,pageSize,aquestion_id);
-    }
+        @GetMapping("findMyAns")
+        public ResultBean<?> findMyAns(int pageNum, int pageSize,int auser_id) {
+            return answerService.selectMyAnsByPage(pageNum, pageSize, auser_id);
+        }
 }

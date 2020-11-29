@@ -8,4 +8,6 @@ public interface AnswerService {
     boolean answerQuestion(Answer answer);
 
     ResultBean<?> findAnswer(int pageNum, int pageSize, String aquestion_id);
+
+    ResultBean<?> selectMyAnsByPage(int pageNum, int pageSize, int auser_id);
 }

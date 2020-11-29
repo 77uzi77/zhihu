@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost/zhihu?characterEncoding=utf8&serverTimezone=GMT
     username: root
-    password: 1234
+    password: root
   redis:
     database: 0
     host: localhost
