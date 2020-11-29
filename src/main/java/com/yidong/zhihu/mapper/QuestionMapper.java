@@ -12,9 +12,15 @@ import java.util.List;
 @Repository
 public interface QuestionMapper{
 
+    /**
+     *  提问
+     */
     @Insert("insert into question (title,detail,quser_id,quser_name) values (#{title},#{detail},#{quser_id},#{quser_name})")
     int add(Question question);
 
+    /**
+     *  分页查询所有问题
+     */
     @Select("select * from question")
     List<Question> selectPage();
 

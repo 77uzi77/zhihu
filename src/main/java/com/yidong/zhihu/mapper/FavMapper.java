@@ -15,12 +15,21 @@ import java.util.List;
 @Repository
 public interface FavMapper {
 
+    /**
+     *  查找 该用户 对该回答 的 收藏状态
+     */
     @Select("select favstate from fav where user_id = #{user_id} and answer_id = #{answer_id}")
     int findByUserAndAnswerId(Integer user_id, Integer answer_id);
 
+    /**
+     *  更新收藏状态
+     */
     @Update("update fav set favstate = #{favstate} where user_id = #{user_id} and answer_id = #{answer_id}")
     void reviseFav(Fav fav);
 
+    /**
+     *  新增收藏
+     */
     @Insert("insert into fav (favstate,user_id,answer_id) values (#{favstate},#{user_id},#{answer_id})")
     void addFav(Fav fav);
 

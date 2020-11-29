@@ -1,6 +1,7 @@
 package com.yidong.zhihu;
 
 import com.yidong.zhihu.service.FavService;
+import com.yidong.zhihu.service.FollowService;
 import com.yidong.zhihu.service.ThumbService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -15,6 +16,8 @@ public class RedisSchedule {
     private FavService favService;
     @Autowired
     private ThumbService thumbService;
+    @Autowired
+    private FollowService followService;
 
     /**
      * 定时 将 点赞、收藏 信息 保存到数据库
@@ -23,5 +26,6 @@ public class RedisSchedule {
     public void dataScheduled(){
         favService.transFavFromRedis2DB();
         thumbService.transThumbFromRedis2DB();
+        followService.transFollowFromRedis2DB();
     }
 }

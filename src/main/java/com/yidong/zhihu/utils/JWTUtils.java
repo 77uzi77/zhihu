@@ -21,7 +21,7 @@ public class JWTUtils {
      * 生成token (header.payload.sig) 并存入Redis
      * 如果同一用户重复登录，token时效重置
      */
-    public static String getToken( Map<String,String> map){
+    public static String getToken( Map<String,String> map) {
         Calendar instance = Calendar.getInstance();
         instance.add(Calendar.DATE,7);
         //创建jwt builder   配合map

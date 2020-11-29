@@ -4,8 +4,11 @@ import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.entity.User;
 import com.yidong.zhihu.entity.vo.UserVo;
 import com.yidong.zhihu.service.UserService;
+import com.yidong.zhihu.constant.MailPre;
+import com.yidong.zhihu.utils.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/user")
@@ -13,16 +16,36 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private RedisUtil redisUtil;
 
+    /**
+     *  发送 验证码 到邮箱
+     */
     @GetMapping("sendCode")
-    public ResultBean<String> sendEmail(@RequestParam("email") String email){
-        if (userService.sendEmail(email)){
+    public ResultBean<String> sendEmail(@RequestParam("email") String email, @RequestParam(value = "tag",defaultValue = "0")Integer tag){
+        String pre ;
+        if (tag==0){
+            //注册
+            pre = MailPre.REGISTER;
+        }else if (tag == 1){
+            //重置邮箱
+            pre = MailPre.RESET_MAIL;
+        }else {
+            //忘记密码
+            pre = MailPre.RESET_PWD;
+        }
+
+        if (userService.sendEmail(pre,email)){
             return new ResultBean<>("发送验证码成功！请注意查收！");
         }else{
             return new ResultBean<>("发送邮件失败，请检查邮箱是否正确！");
         }
     }
 
+    /**
+     *  注册
+     */
     @PostMapping("/register")
     public ResultBean<String> register(@RequestBody UserVo user){
         if (userService.register(user)){
@@ -32,9 +55,28 @@ public class UserController {
         }
     }
 
+    /**
+     *  登录
+     */
     @PostMapping("/login")
     public ResultBean<com.alibaba.fastjson.JSONObject> login(@RequestBody User user){
         return new ResultBean<>(userService.login(user));
+    }
+
+    /**
+     *  找回密码
+     */
+    @PutMapping("findPassword")
+    public ResultBean<?> findPassword(@RequestBody UserVo userVo, HttpServletRequest request){
+        if (userService.forgetPassword(userVo)){
+            String token = request.getHeader("token");
+            if (token != null){
+                redisUtil.del(token);
+            }
+            return new ResultBean<>("找回密码成功！");
+        }else{
+            return new ResultBean<>("找回密码失败！");
+        }
     }
 
     @PostMapping("/test")
@@ -60,8 +102,8 @@ public class UserController {
 
     //个人主页：编辑个人基本信息
     @PostMapping("editSelfMessage")
-    public ResultBean<String> editSelfMessage(int id, @RequestBody String message) {
-        userService.editSelfMessage(id, message);
+    public ResultBean<String> editSelfMessage(@RequestBody User user) {
+        userService.editSelfMessage(user.getId(), user.getMessage());
         return new ResultBean<>("个人信息编辑成功！");
     }
 

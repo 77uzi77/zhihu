@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface UserService {
-    boolean sendEmail(String email);
+    boolean sendEmail(String pre,String email);
 
     boolean register(UserVo user);
 
@@ -21,4 +21,5 @@ public interface UserService {
 
     void editSelfMessage(int id, String message);
 
+    Boolean forgetPassword(UserVo userVo);
 }

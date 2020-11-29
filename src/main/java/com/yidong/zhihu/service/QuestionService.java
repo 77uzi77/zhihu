@@ -1,10 +1,7 @@
 package com.yidong.zhihu.service;
 
-import com.yidong.zhihu.entity.PageBean;
 import com.yidong.zhihu.entity.Question;
 import com.yidong.zhihu.entity.ResultBean;
-
-import java.util.List;
 
 public interface QuestionService {
     boolean askQuestion(Question question);
@@ -16,7 +13,7 @@ public interface QuestionService {
      * 分页查询我的提问
      */
 /*    Page<Question> findMyQueByPage(int page, int pageSize,String factor);*/
-    PageBean<Question> findMyQueByPage(String currentPage, String pageSize, String username);
+    ResultBean<?> findMyQueByPage(int page, int pageSize, String username);
 
     /**
      * 根据标题查找对应的question实体

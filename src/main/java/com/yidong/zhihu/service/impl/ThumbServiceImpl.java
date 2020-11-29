@@ -1,6 +1,7 @@
 package com.yidong.zhihu.service.impl;
 
 
+import com.yidong.zhihu.constant.DataKey;
 import com.yidong.zhihu.entity.Thumb;
 import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.mapper.ThumbMapper;
@@ -22,20 +23,26 @@ public class ThumbServiceImpl implements ThumbService {
     @Autowired
     private ThumbMapper thumbMapper;
 
+    /**
+     * 点赞 该回答
+     */
     @Override
     public void thumbAnswer(Thumb thumb) {
         String builder = thumb.getUser_id() + ":" + thumb.getAnswer_id();
-        redisUtil.hset("MAP_KEY_USER_LIKED", builder,thumb.getThumbstate());
+        redisUtil.hset(DataKey.USER_THUMB, builder,thumb.getThumbstate());
         int count = thumb.getThumbstate() == 1 ? 1 : -1;
-        redisUtil.hincr("MAP_KEY_USER_LIKED_COUNT",String.valueOf(thumb.getAnswer_id()),count);
+        redisUtil.hincr(DataKey.USER_THUMB_COUNT,String.valueOf(thumb.getAnswer_id()),count);
     }
 
+    /**
+     * 该回答的 点赞 数量
+     */
     @Override
     public ResultBean<?> thumbCount(String answerId) {
         if (answerId == null){
             return new ResultBean<>("请求错误！无效的回答！");
         }
-        String count = String.valueOf(redisUtil.hget("MAP_KEY_USER_LIKED_COUNT",answerId));
+        String count = String.valueOf(redisUtil.hget(DataKey.USER_THUMB_COUNT,answerId));
         count = count == null ? "0" : count;
         return new ResultBean<>(count);
     }
@@ -47,7 +54,7 @@ public class ThumbServiceImpl implements ThumbService {
     @Override
     @Transactional
     public void transThumbFromRedis2DB() {
-        Cursor<Map.Entry<Object, Object>> cursor = redisUtil.scanAll("MAP_KEY_USER_LIKED");
+        Cursor<Map.Entry<Object, Object>> cursor = redisUtil.scanAll(DataKey.USER_THUMB);
         List<Thumb> list = new ArrayList<>();
         while (cursor.hasNext()){
             Map.Entry<Object, Object> entry = cursor.next();
@@ -66,7 +73,7 @@ public class ThumbServiceImpl implements ThumbService {
             list.add(userLike);
 
             //存到 list 后从 Redis 中删除
-            redisUtil.hdel("MAP_KEY_USER_LIKED",key);
+            redisUtil.hdel(DataKey.USER_THUMB,key);
         }
         for (Thumb thumb : list){
             try {

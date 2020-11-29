@@ -17,6 +17,9 @@ public class AnswerServiceImpl implements AnswerService {
     @Autowired
     private AnswerMapper answerMapper;
 
+    /**
+     * 回答问题
+     */
     @Override
     public boolean answerQuestion(Answer answer) {
 
@@ -35,6 +38,9 @@ public class AnswerServiceImpl implements AnswerService {
         }
     }
 
+    /**
+     * 分页 查询 该问题下 的回答
+     */
     @Override
     public ResultBean<?> findAnswer(int pageNum, int pageSize, String aquestion_id) {
         PageHelper.startPage(pageNum, pageSize);
@@ -43,6 +49,9 @@ public class AnswerServiceImpl implements AnswerService {
         return new ResultBean<>(pageList.getList());
     }
 
+    /**
+     * 分页查询 我的 回答
+     */
     @Override
     public ResultBean<?> selectMyAnsByPage(int pageNum, int pageSize, int auser_id) {
         PageHelper.startPage(pageNum, pageSize);

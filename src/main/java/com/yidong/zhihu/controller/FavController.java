@@ -35,9 +35,11 @@ public class FavController {
         return favService.favCount(answerId);
     }
 
-    //查询我的关注
+    /**
+     *  分页查询 我的 收藏
+     */
     @GetMapping("findMyFav")
     public ResultBean<?> findMyAns(int pageNum, int pageSize,int user_id) {
         return favService.selectMyFavByPage(pageNum, pageSize, user_id);
-    }
+}
 }

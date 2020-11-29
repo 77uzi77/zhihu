@@ -49,10 +49,8 @@ public class QuestionController {
      * 查询分页数据
      */
     @GetMapping("findMyQueByPage")
-    public ResultBean<?> findMyQueByPage(@RequestParam(name = "currentPage", defaultValue = "1") String currentPage,
-                                         @RequestParam(name = "pageSize", defaultValue = "3") String pageSize,
-                                         @RequestParam(name = "username", defaultValue = "") String username){
-        return new ResultBean<>(questionService.findMyQueByPage(currentPage, pageSize,username));
+    public ResultBean<?> findMyQueByPage(int pageNum, int pageSize,String username){
+        return new ResultBean<>(questionService.findMyQueByPage(pageNum, pageSize,username));
     }
 
     /**
