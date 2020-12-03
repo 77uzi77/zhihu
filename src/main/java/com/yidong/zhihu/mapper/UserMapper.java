@@ -1,6 +1,5 @@
 package com.yidong.zhihu.mapper;
 
-import com.yidong.zhihu.entity.Answer;
 import com.yidong.zhihu.entity.User;
 import com.yidong.zhihu.entity.vo.UserVo;
 import org.apache.ibatis.annotations.Insert;
@@ -14,6 +13,12 @@ import java.util.List;
 @Mapper
 @Repository
 public interface UserMapper {
+
+    /**
+     * 通过 用户id 查找 用户名和头像
+     */
+    @Select("select username,iconpath from user where id = #{id}")
+    User findUsernameByUserId(int id);
 
     /**
      *  通过邮箱查找用户

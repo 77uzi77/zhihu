@@ -25,13 +25,10 @@ public class UserController {
     @GetMapping("sendCode")
     public ResultBean<String> sendEmail(@RequestParam("email") String email, @RequestParam(value = "tag",defaultValue = "0")Integer tag){
         String pre ;
-        if (tag==0){
+        if (tag == 0){
             //注册
             pre = MailPre.REGISTER;
-        }else if (tag == 1){
-            //重置邮箱
-            pre = MailPre.RESET_MAIL;
-        }else {
+        } else {
             //忘记密码
             pre = MailPre.RESET_PWD;
         }

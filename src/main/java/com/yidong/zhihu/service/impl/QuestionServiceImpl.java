@@ -53,7 +53,7 @@ public class QuestionServiceImpl implements QuestionService {
 ////
 ////        return pb;
         PageHelper.startPage(pageNum, pageSize);
-        List<Question> questionList = questionMapper.selectPage();
+        List<Question> questionList = questionMapper.findMyQuestionByPage(quser_name);
         PageInfo<Question> pageList = new PageInfo<>(questionList);
         return new ResultBean<>(pageList.getList());
     }

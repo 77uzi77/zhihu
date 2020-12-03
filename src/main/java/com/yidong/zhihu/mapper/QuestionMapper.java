@@ -29,8 +29,11 @@ public interface QuestionMapper{
     int findTotalCount(String quser_name);
 
     // 分页查询 我的提问 每页记录
-    @Select("select * from question where quser_name = #{quser_name}  limit #{start},#{rows}")
-    List<Question> findByPage(int start, int rows, String quser_name);
+//    @Select("select * from question where quser_name = #{quser_name}  limit #{start},#{rows}")
+//    List<Question> findByPage(int start, int rows, String quser_name);
+    // 分页查询 我的提问 每页记录
+    @Select("select * from question where quser_name = #{quser_name}")
+    List<Question> findMyQuestionByPage(String quser_name);
 
     // 根据标题查找对应的question实体
     @Select("select * from question where title = #{title}")

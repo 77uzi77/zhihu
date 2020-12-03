@@ -1,5 +1,9 @@
 package com.yidong.zhihu.utils;
 
+import javafx.beans.property.SimpleStringProperty;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -13,4 +17,13 @@ public class CommonUtils {
         return m.matches();
     }
 
+    public static String getNowTime(){
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");//设置日期格式
+        System.out.println(df.format(new Date()));// new Date()为获取当前系统时间
+        return df.format(new Date());
+    }
+
+    public static void main(String[] args) {
+        getNowTime();
+    }
 }

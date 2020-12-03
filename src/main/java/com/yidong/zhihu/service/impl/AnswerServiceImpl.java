@@ -3,7 +3,6 @@ package com.yidong.zhihu.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.yidong.zhihu.entity.Answer;
-import com.yidong.zhihu.entity.Question;
 import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.mapper.AnswerMapper;
 import com.yidong.zhihu.service.AnswerService;

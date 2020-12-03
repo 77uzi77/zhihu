@@ -1,12 +1,10 @@
 package com.yidong.zhihu.controller;
 
-import com.yidong.zhihu.entity.Fav;
 import com.yidong.zhihu.entity.Follow;
 import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.service.FollowService;
 import com.yidong.zhihu.utils.JWTUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,7 +15,7 @@ public class FollowController {
     @Autowired
     private FollowService followService;
     /**
-     * 收藏回答
+     * 关注
      */
     @PostMapping("followOne")
     public void followOne(HttpServletRequest request, @RequestBody Follow follow){

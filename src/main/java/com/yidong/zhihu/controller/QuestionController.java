@@ -19,6 +19,9 @@ public class QuestionController {
     @Autowired
     private QuestionService questionService;
 
+    /**
+     * 提问
+     */
     @PostMapping("askQuestion")
     public ResultBean<String> askQuestion(HttpServletRequest request, @RequestBody Question question){
         String token = request.getHeader("token");

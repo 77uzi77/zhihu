@@ -25,7 +25,7 @@ public class FileController {
         return new ResultBean<>(fileService.insertUserPhoto(username,file));
     }
 
-    //上传头像
+    //上传背景图
     @PostMapping("/uploadBackgroundPhoto")
     @ResponseBody
     public ResultBean<String> uploadBackgroundPhoto(String username , @RequestParam("file") MultipartFile file){
