@@ -1,10 +1,8 @@
 package com.yidong.zhihu.mapper;
 
 import com.yidong.zhihu.entity.Answer;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.mapping.FetchType;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -39,7 +37,15 @@ public interface AnswerMapper {
 
     //个人主页：分页查询我的回答
  //   @Select("select question.*,answer.* from answer,question where answer.auser_id = #{auser_id} and answer.aquestion_id=question.id")
-    @Select("select * from answer left join question on answer.aquestion_id = question.id where answer.auser_id = #{auser_id}")
+    @Select("select * from answer where auser_id = #{auser_id}")
+    @Results(id = "answerMap",value = {
+            @Result(id = true,column = "id",property = "id"),
+            @Result(column = "content",property = "content"),
+            @Result(column = "auser_id",property = "auser_id"),
+            @Result(column = "aquestion_id",property = "aquestion_id"),
+            @Result(property = "question",column = "aquestion_id",
+                    one = @One(select = "com.yidong.zhihu.mapper.QuestionMapper.selectQuestionById",fetchType = FetchType.EAGER))
+    })
     List<Answer> selectMyAnsByPage(int auser_id);
 
     // 个人主页：计算 我的回答 总记录数

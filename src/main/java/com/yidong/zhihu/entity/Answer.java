@@ -15,9 +15,4 @@ public class Answer implements Serializable {
 //    @JsonIgnoreProperties(value = { "handler" })
     private Question question;
 
-//    private Integer q_id;
-//    private Integer quser_id;
-//    private String title;
-//    private String detail;
-//    private String quser_name;
 }
