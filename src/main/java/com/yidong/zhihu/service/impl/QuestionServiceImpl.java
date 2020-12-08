@@ -63,6 +63,8 @@ public class QuestionServiceImpl implements QuestionService {
         return questionMapper.FindQuestionByTitle(title);
     }
 
+
+
     /**
      * 模糊查询
      */
@@ -74,5 +76,10 @@ public class QuestionServiceImpl implements QuestionService {
         List<Question> questionList = questionMapper.selectPageBySearch(content);
         PageInfo<Question> pageList = new PageInfo<>(questionList);
         return new ResultBean<>(pageList.getList());
+    }
+
+    @Override
+    public int countMyQues(String quser_name) {
+        return questionMapper.countMyQues(quser_name);
     }
 }

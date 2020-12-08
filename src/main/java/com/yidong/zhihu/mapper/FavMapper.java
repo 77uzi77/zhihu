@@ -1,8 +1,6 @@
 package com.yidong.zhihu.mapper;
-
 import com.yidong.zhihu.entity.Answer;
 import com.yidong.zhihu.entity.Fav;
-import com.yidong.zhihu.entity.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -34,6 +32,13 @@ public interface FavMapper {
     void addFav(Fav fav);
 
     //个人主页：分页查询我的收藏夹
-    @Select("select * from fav where user_id = #{user_id} and favstate=1")
+  //  @Select("select * from fav where user_id = #{user_id} and favstate=1")
+   @Select("select question.*,answer.*, fav.* from question, answer,fav " +
+           "where fav.favstate=1 and fav.answer_id=answer.id and answer.aquestion_id=question.id"+
+           " and user_id = #{user_id}")
     List<Answer> selectMyFavByPage(int user_id);
+
+    //个人主页：计算 我的收藏 总记录数
+    @Select("select count(*) from fav where user_id = #{user_id} and favstate=1")
+    int countMyFav(int user_id);
 }

@@ -38,4 +38,12 @@ public class AnswerController {
     public ResultBean<?> findMyAns(int pageNum, int pageSize,int auser_id) {
         return answerService.selectMyAnsByPage(pageNum, pageSize, auser_id);
     }
+
+    /**
+     * 个人主页：计算我的回答总数
+     */
+    @GetMapping("countMyAns")
+    public ResultBean<?> countMyAns(int auser_id){
+        return new ResultBean<>(answerService.countMyAns(auser_id));
+    }
 }

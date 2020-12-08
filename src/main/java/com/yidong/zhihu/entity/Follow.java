@@ -1,6 +1,7 @@
 package com.yidong.zhihu.entity;
 
 import lombok.Data;
+
 import java.io.Serializable;
 
 /**

@@ -1,7 +1,5 @@
 package com.yidong.zhihu.utils;
 
-import javafx.beans.property.SimpleStringProperty;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.regex.Matcher;

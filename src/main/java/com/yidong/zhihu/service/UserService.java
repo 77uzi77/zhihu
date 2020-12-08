@@ -22,4 +22,9 @@ public interface UserService {
     void editSelfMessage(int id, String message);
 
     Boolean forgetPassword(UserVo userVo);
+
+    /**
+     *  查找 用户名 查找用户
+     */
+    User findUserByUsername(String username);
 }

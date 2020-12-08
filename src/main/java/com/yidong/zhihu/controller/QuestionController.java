@@ -1,17 +1,13 @@
 package com.yidong.zhihu.controller;
 
-import com.auth0.jwt.interfaces.DecodedJWT;
 import com.yidong.zhihu.entity.Question;
 import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.service.QuestionService;
 import com.yidong.zhihu.utils.JWTUtils;
-import io.lettuce.core.ScriptOutputType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Arrays;
-import java.util.List;
 
 @RestController
 @RequestMapping("question")
@@ -70,5 +66,13 @@ public class QuestionController {
     @GetMapping("findQuestion")
     public ResultBean<?> findQuestion(int pageNum, int pageSize,String content){
         return questionService.findQuestion(pageNum,pageSize,content);
+    }
+
+    /**
+     * 个人主页：计算我的提问总数
+     */
+    @GetMapping("countMyQues")
+    public ResultBean<?> countMyQues(String quser_name){
+        return new ResultBean<>(questionService.countMyQues(quser_name));
     }
 }

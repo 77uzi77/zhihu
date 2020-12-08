@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface FollowMapper {
     /**
-     *  查找 该用户 对 特点用户的 关注状态
+     *  查找 该用户 对 特定用户的 关注状态
      */
     @Select("select followstate from follow where followed_id = #{followed_id} and follower_id = #{follower_id}")
     int findByUserAndAnswerId(Integer followed_id, Integer follower_id);
@@ -27,4 +27,5 @@ public interface FollowMapper {
      */
     @Insert("insert into follow (followstate,followed_id,follower_id) values (#{followstate},#{followed_id},#{follower_id})")
     void addFollow(Follow follow);
+
 }

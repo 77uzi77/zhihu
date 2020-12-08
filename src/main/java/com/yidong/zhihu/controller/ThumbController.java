@@ -1,7 +1,7 @@
 package com.yidong.zhihu.controller;
 
-import com.yidong.zhihu.entity.Thumb;
 import com.yidong.zhihu.entity.ResultBean;
+import com.yidong.zhihu.entity.Thumb;
 import com.yidong.zhihu.service.ThumbService;
 import com.yidong.zhihu.utils.JWTUtils;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,8 +2,8 @@ package com.yidong.zhihu.service.impl;
 
 
 import com.yidong.zhihu.constant.DataKey;
-import com.yidong.zhihu.entity.Thumb;
 import com.yidong.zhihu.entity.ResultBean;
+import com.yidong.zhihu.entity.Thumb;
 import com.yidong.zhihu.mapper.ThumbMapper;
 import com.yidong.zhihu.service.ThumbService;
 import com.yidong.zhihu.utils.RedisUtil;

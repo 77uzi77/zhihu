@@ -1,6 +1,5 @@
 package com.yidong.zhihu.service.impl;
 
-import com.yidong.zhihu.entity.User;
 import com.yidong.zhihu.exception.bizException.BizException;
 import com.yidong.zhihu.mapper.UserMapper;
 import com.yidong.zhihu.service.FileService;
@@ -69,8 +68,8 @@ public class FileServiceImpl implements FileService {
         String filePath=path+"bgp/";
         String fileNewName = FileUtils.getFileNewName(file.getOriginalFilename());
 
-        //调用mapper层保存上传的头像路径名称fileNewName
-        userMapper.saveIconpath(username,fileNewName);
+        //调用mapper层保存上传的背景图路径名称fileNewName
+        userMapper.saveBgppath(username,fileNewName);
 
         try {
             FileUtils.upload(file.getBytes(),filePath,fileNewName);

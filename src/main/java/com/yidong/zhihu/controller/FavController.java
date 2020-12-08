@@ -39,7 +39,15 @@ public class FavController {
      *  分页查询 我的 收藏
      */
     @GetMapping("findMyFav")
-    public ResultBean<?> findMyAns(int pageNum, int pageSize,int user_id) {
+    public ResultBean<?> findMyFav(int pageNum, int pageSize,int user_id) {
         return favService.selectMyFavByPage(pageNum, pageSize, user_id);
-}
+    }
+
+    /**
+     * 个人主页：计算我的收藏总数
+     */
+    @GetMapping("countMyFav")
+    public ResultBean<?> countMyFav(int user_id){
+        return new ResultBean<>(favService.countMyFav(user_id));
+    }
 }

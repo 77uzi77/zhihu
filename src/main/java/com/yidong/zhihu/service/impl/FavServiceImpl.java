@@ -6,7 +6,6 @@ import com.yidong.zhihu.constant.DataKey;
 import com.yidong.zhihu.entity.Answer;
 import com.yidong.zhihu.entity.Fav;
 import com.yidong.zhihu.entity.ResultBean;
-import com.yidong.zhihu.entity.User;
 import com.yidong.zhihu.mapper.FavMapper;
 import com.yidong.zhihu.service.FavService;
 import com.yidong.zhihu.utils.RedisUtil;
@@ -15,7 +14,6 @@ import org.springframework.data.redis.core.Cursor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.xml.crypto.Data;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -99,8 +97,14 @@ public class FavServiceImpl implements FavService {
     public ResultBean<?> selectMyFavByPage(int pageNum, int pageSize, int user_id) {
         PageHelper.startPage(pageNum, pageSize);
         List<Answer> myAnsList = favMapper.selectMyFavByPage(user_id);
+        System.out.println(myAnsList);
         PageInfo<Answer> pageList = new PageInfo<>(myAnsList);
         return new ResultBean<>(pageList.getList());
+    }
+
+    @Override
+    public int countMyFav(int user_id) {
+        return favMapper.countMyFav(user_id);
     }
 
 

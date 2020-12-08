@@ -1,7 +1,6 @@
 package com.yidong.zhihu.mapper;
 
 import com.yidong.zhihu.entity.Answer;
-import com.yidong.zhihu.entity.Question;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -39,6 +38,12 @@ public interface AnswerMapper {
     List<Answer> selectPageByQuestion(String aquestion_id);
 
     //个人主页：分页查询我的回答
-    @Select("select * from answer where auser_id = #{auser_id}")
+ //   @Select("select question.*,answer.* from answer,question where answer.auser_id = #{auser_id} and answer.aquestion_id=question.id")
+    @Select("select * from answer left join question on answer.aquestion_id = question.id where answer.auser_id = #{auser_id}")
     List<Answer> selectMyAnsByPage(int auser_id);
+
+    // 个人主页：计算 我的回答 总记录数
+    @Select("select count(*) from answer where auser_id = #{auser_id}")
+    int countMyAns(int auser_id);
+
 }

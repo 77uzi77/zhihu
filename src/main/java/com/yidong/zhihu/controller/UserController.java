@@ -1,13 +1,14 @@
 package com.yidong.zhihu.controller;
 
+import com.yidong.zhihu.constant.MailPre;
 import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.entity.User;
 import com.yidong.zhihu.entity.vo.UserVo;
 import com.yidong.zhihu.service.UserService;
-import com.yidong.zhihu.constant.MailPre;
 import com.yidong.zhihu.utils.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import javax.servlet.http.HttpServletRequest;
 
 @RestController
@@ -104,6 +105,11 @@ public class UserController {
         return new ResultBean<>("个人信息编辑成功！");
     }
 
-    //点击其他用户名昵称，访问他人主页
+    //根据用户的用户名找到该用户的信息：头像、背景图等等
+    @GetMapping("findUserByUsername")
+    public ResultBean<User> findUserByUsername( String username) {
+        User user = userService.findUserByUsername(username);
+        return new ResultBean<>(user);
+    }
 
 }

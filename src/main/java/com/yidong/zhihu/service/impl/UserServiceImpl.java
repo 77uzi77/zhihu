@@ -155,7 +155,6 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public void editSelfMessage(int id , @RequestBody String message) {
-        System.out.println(message);
         userMapper.editSelfMessage(id, message);
     }
 
@@ -180,6 +179,11 @@ public class UserServiceImpl implements UserService {
         }else{
             throw new BizException("验证邮箱验证码错误，找回密码失败");
         }
+    }
+
+    @Override
+    public User findUserByUsername(String username) {
+        return userMapper.findUserByUsername(username);
     }
 
 }

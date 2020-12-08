@@ -10,4 +10,6 @@ public interface AnswerService {
     ResultBean<?> findAnswer(int pageNum, int pageSize, String aquestion_id);
 
     ResultBean<?> selectMyAnsByPage(int pageNum, int pageSize, int auser_id);
+
+    int countMyAns(int auser_id);
 }

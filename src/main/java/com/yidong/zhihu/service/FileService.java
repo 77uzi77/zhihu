@@ -2,7 +2,6 @@
 
 package com.yidong.zhihu.service;
 
-import com.yidong.zhihu.entity.User;
 import org.springframework.web.multipart.MultipartFile;
 
 /**

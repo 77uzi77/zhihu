@@ -12,11 +12,13 @@ public interface QuestionService {
     /**
      * 分页查询我的提问
      */
-/*    Page<Question> findMyQueByPage(int page, int pageSize,String factor);*/
     ResultBean<?> findMyQueByPage(int page, int pageSize, String username);
 
     /**
      * 根据标题查找对应的question实体
      */
     String FindQuestionByTitle(String title);
+
+
+    int countMyQues(String quser_name);
 }

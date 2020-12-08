@@ -44,6 +44,12 @@ public interface UserMapper {
     @Insert("update user set iconpath=#{iconpath} where username = #{username}")
     void saveIconpath(String username, String iconpath);
 
+    /**
+     *  保存背景图路径
+     */
+    @Insert("update user set bgppath=#{bgppath} where username = #{username}")
+    void saveBgppath(String username, String bgppath);
+
     //个人主页：分页查询我的关注
     @Select("select * from follow where follower_id = #{follower_id} and followstate = 1")
     List<User> selectMyFosByPage(int follower_id);
@@ -61,4 +67,6 @@ public interface UserMapper {
      */
     @Update("update user set password = #{password} where email = #{email}")
     int revisePassword(UserVo user);
+
+
 }

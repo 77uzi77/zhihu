@@ -58,4 +58,12 @@ public class AnswerServiceImpl implements AnswerService {
         PageInfo<Answer> pageList = new PageInfo<>(myAnsList);
         return new ResultBean<>(pageList.getList());
     }
+
+    /**
+     * 个人主页：计算我的回答 总数
+     */
+    @Override
+    public int countMyAns(int auser_id) {
+        return answerMapper.countMyAns(auser_id);
+    }
 }
