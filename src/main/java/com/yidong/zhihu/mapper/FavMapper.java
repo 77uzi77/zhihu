@@ -1,10 +1,8 @@
 package com.yidong.zhihu.mapper;
 import com.yidong.zhihu.entity.Answer;
 import com.yidong.zhihu.entity.Fav;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.mapping.FetchType;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -33,9 +31,20 @@ public interface FavMapper {
 
     //个人主页：分页查询我的收藏夹
   //  @Select("select * from fav where user_id = #{user_id} and favstate=1")
-   @Select("select question.*,answer.*, fav.* from question, answer,fav " +
-           "where fav.favstate=1 and fav.answer_id=answer.id and answer.aquestion_id=question.id"+
-           " and user_id = #{user_id}")
+//   @Select("select question.*,answer.*, fav.* from question, answer,fav " +
+//           "where fav.favstate=1 and fav.answer_id=answer.id and answer.aquestion_id=question.id"+
+//           " and user_id = #{user_id}")
+//    List<Answer> selectMyFavByPage(int user_id);
+    @Select("select answer.*, fav.answer_id from answer,fav where fav.favstate = 1 " +
+                "and fav.answer_id = answer.id and user_id = #{user_id}")
+    @Results(id = "answerMap",value = {
+            @Result(id = true,column = "id",property = "id"),
+            @Result(column = "content",property = "content"),
+            @Result(column = "auser_id",property = "auser_id"),
+            @Result(column = "aquestion_id",property = "aquestion_id"),
+            @Result(property = "question",column = "aquestion_id",
+                one = @One(select = "com.yidong.zhihu.mapper.QuestionMapper.selectQuestionById",fetchType = FetchType.EAGER))
+    })
     List<Answer> selectMyFavByPage(int user_id);
 
     //个人主页：计算 我的收藏 总记录数

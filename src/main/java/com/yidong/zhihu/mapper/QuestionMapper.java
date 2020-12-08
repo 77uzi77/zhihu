@@ -43,4 +43,8 @@ public interface QuestionMapper{
 
     @Select("select * from question where title like #{content} or detail like #{content}")
     List<Question> selectPageBySearch(String content);
+
+    // 根据 id 查找 question
+    @Select("select * from question where id = #{id}")
+    Question selectQuestionById(Integer id);
 }
