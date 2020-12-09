@@ -13,23 +13,19 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bed8e52c-2b1e-484e-853e-8e8bf4182e12" name="Default Changelist" comment="Self-homepage">
+    <list default="true" id="bed8e52c-2b1e-484e-853e-8e8bf4182e12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/QuestionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/QuestionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/QuestionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/QuestionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/QuestionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/QuestionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/QuestionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/QuestionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/QuestionService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/QuestionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.yidong.zhihu.ZhihuApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.yidong.zhihu.ZhihuApplicationTests.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
@@ -98,12 +94,12 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\iamhe\zhihu\static\img\bgp" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.yidong.zhihu" />
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.yidong.zhihu.utils" />
@@ -111,8 +107,8 @@
       <recent name="com.yidong.zhihu.config" />
       <recent name="com.yidong.zhihu.entity" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\iamhe\zhihu\static\img\bgp" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ZhihuApplication">
@@ -157,7 +153,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -264,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606549660899</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Self-homepage">
+      <created>1607417265565</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607417265565</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,55 +320,80 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="722" y="482" width="490" height="342" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1605857683156" />
-    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1606220656563">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="241" y="0" key="CommitChangelistDialog2" timestamp="1607417264690">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="193" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606220656563" />
+    <state x="241" y="0" key="CommitChangelistDialog2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607417264690" />
     <state x="624" y="119" key="FileChooserDialogImpl" timestamp="1606550139150">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="499" y="94" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604673410905" />
     <state x="624" y="119" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606550139150" />
-    <state width="1493" height="401" key="GridCell.Tab.0.bottom" timestamp="1606635838617">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1472" height="290" key="GridCell.Tab.0.bottom" timestamp="1607514000139">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1493" height="290" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607513549003" />
+    <state width="1472" height="290" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607514000139" />
     <state width="1493" height="401" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606635838617" />
     <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1493" height="401" key="GridCell.Tab.0.center" timestamp="1606635838617">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1867" height="264" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607417918182" />
+    <state width="1472" height="290" key="GridCell.Tab.0.center" timestamp="1607514000139">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1493" height="290" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607513549003" />
+    <state width="1472" height="290" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607514000139" />
     <state width="1493" height="401" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606635838617" />
     <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1493" height="401" key="GridCell.Tab.0.left" timestamp="1606635838617">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1867" height="264" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607417918182" />
+    <state width="1472" height="290" key="GridCell.Tab.0.left" timestamp="1607514000139">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1493" height="290" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607513549002" />
+    <state width="1472" height="290" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607514000139" />
     <state width="1493" height="401" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606635838617" />
     <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1493" height="401" key="GridCell.Tab.0.right" timestamp="1606635838617">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1867" height="264" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607417918182" />
+    <state width="1472" height="290" key="GridCell.Tab.0.right" timestamp="1607514000139">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1493" height="290" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607513549003" />
+    <state width="1472" height="290" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607514000139" />
     <state width="1493" height="401" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606635838617" />
     <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1493" height="401" key="GridCell.Tab.1.bottom" timestamp="1606635815495">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1867" height="264" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607417918182" />
+    <state width="1472" height="290" key="GridCell.Tab.1.bottom" timestamp="1607514000139">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1493" height="290" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607513549003" />
+    <state width="1472" height="290" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607514000139" />
     <state width="1493" height="401" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606635815495" />
     <state width="1877" height="242" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1493" height="401" key="GridCell.Tab.1.center" timestamp="1606635815495">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1867" height="264" key="GridCell.Tab.1.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607417918182" />
+    <state width="1472" height="290" key="GridCell.Tab.1.center" timestamp="1607514000139">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1493" height="290" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607513549003" />
+    <state width="1472" height="290" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607514000139" />
     <state width="1493" height="401" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606635815495" />
     <state width="1877" height="242" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1493" height="401" key="GridCell.Tab.1.left" timestamp="1606635815495">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1867" height="264" key="GridCell.Tab.1.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607417918182" />
+    <state width="1472" height="290" key="GridCell.Tab.1.left" timestamp="1607514000139">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1493" height="290" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607513549003" />
+    <state width="1472" height="290" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607514000139" />
     <state width="1493" height="401" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606635815495" />
     <state width="1877" height="242" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1493" height="401" key="GridCell.Tab.1.right" timestamp="1606635815495">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1867" height="264" key="GridCell.Tab.1.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607417918182" />
+    <state width="1472" height="290" key="GridCell.Tab.1.right" timestamp="1607514000139">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1493" height="290" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607513549003" />
+    <state width="1472" height="290" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607514000139" />
     <state width="1493" height="401" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606635815495" />
     <state width="1877" height="242" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
+    <state width="1867" height="264" key="GridCell.Tab.1.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607417918182" />
     <state width="1483" height="234" key="GridCell.Tab.2.bottom" timestamp="1605629359162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -404,11 +432,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="1029" y="119" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1606222154908" />
-    <state x="326" y="102" key="Vcs.Push.Dialog.v2" timestamp="1606549667756">
+    <state x="326" y="102" key="Vcs.Push.Dialog.v2" timestamp="1607417332171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="261" y="81" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606217391939" />
     <state x="326" y="102" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606549667756" />
+    <state x="326" y="102" key="Vcs.Push.Dialog.v2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607417332171" />
     <state x="389" y="85" key="VcsDiffUtil.ChangesDialog" timestamp="1604720350218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -461,9 +490,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606532956209" />
-    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1605607527293">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="434" y="-1" width="1050" height="1306" key="search.everywhere.popup" timestamp="1607415769043">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605607527293" />
+    <state x="434" y="-1" width="1050" height="1306" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607415769043" />
   </component>
 </project>

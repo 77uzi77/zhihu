@@ -17,7 +17,7 @@ public interface QuestionService {
     /**
      * 根据标题查找对应的question实体
      */
-    String FindQuestionByTitle(String title);
+    Question FindQuestionByTitle(String title);
 
 
     int countMyQues(String quser_name);

@@ -51,7 +51,7 @@ public interface UserMapper {
     void saveBgppath(String username, String bgppath);
 
     //个人主页：分页查询我的关注
-    @Select("select * from follow where follower_id = #{follower_id} and followstate = 1")
+    @Select("select * from user,follow where follow.follower_id = #{follower_id} and follow.followstate = 1 and follow.followed_id=user.id")
     List<User> selectMyFosByPage(int follower_id);
 
     //个人主页：查看个人基本信息

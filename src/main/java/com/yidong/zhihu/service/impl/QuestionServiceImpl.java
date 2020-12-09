@@ -59,7 +59,7 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     @Override
-    public String FindQuestionByTitle(String title) {
+    public Question FindQuestionByTitle(String title) {
         return questionMapper.FindQuestionByTitle(title);
     }
 
