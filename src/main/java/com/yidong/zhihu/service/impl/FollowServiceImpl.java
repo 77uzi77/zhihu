@@ -2,10 +2,11 @@ package com.yidong.zhihu.service.impl;
 
 import com.yidong.zhihu.constant.DataKey;
 import com.yidong.zhihu.entity.Follow;
-import com.yidong.zhihu.entity.ResultBean;
+import com.yidong.zhihu.exception.bizException.BizException;
 import com.yidong.zhihu.mapper.FollowMapper;
 import com.yidong.zhihu.service.FollowService;
 import com.yidong.zhihu.utils.RedisUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.Cursor;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
+@Slf4j
 public class FollowServiceImpl implements FollowService {
     @Autowired
     private RedisUtil redisUtil;
@@ -24,30 +26,41 @@ public class FollowServiceImpl implements FollowService {
 
     /**
      * 关注 该用户
+     * @author lzc
      */
     @Override
-    public void followOne(Follow follow) {
+    public String followOne(Follow follow) {
         String builder = follow.getFollowed_id() + ":" + follow.getFollower_id();
         redisUtil.hset(DataKey.USER_FOLLOW, builder,follow.getFollowstate());
         int count = follow.getFollowstate() == 1 ? 1 : -1;
         redisUtil.hincr(DataKey.USER_FOLLOW_COUNT,String.valueOf(follow.getFollowed_id()),count);
+
+        String msg;
+        if (count == 1){
+            msg = "关注成功！";
+        }else{
+            msg = "取消关注成功！";
+        }
+        return msg;
     }
 
     /**
      * 该用户的 关注数量
+     * @author lzc
      */
     @Override
-    public ResultBean<?> followCount(String followed_id) {
+    public String followCount(String followed_id) {
         if (followed_id == null){
-            return new ResultBean<>("请求错误！无效的请求！");
+            throw new BizException("无效的请求！");
         }
         String count = String.valueOf(redisUtil.hget(DataKey.USER_FOLLOW_COUNT,followed_id));
         count = count == null ? "0" : count;
-        return new ResultBean<>(count);
+        return count;
     }
     
     /**
      * 将 缓存在 redis 的 用户关注信息 保存到 数据库
+     * @author lzc
      */
     @Override
     @Transactional

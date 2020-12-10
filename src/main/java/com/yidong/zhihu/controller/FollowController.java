@@ -9,27 +9,39 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ *  处理关注相关请求
+ */
 @RestController
 @RequestMapping("follow")
 public class FollowController {
     @Autowired
     private FollowService followService;
-    /**
-     * 关注
+    /*
+     * @param request
+     * @param follow
+     * @return ResultBean<?>
+     * @author lzc
+     * @date 2020/12/10
+     * 关注用户
      */
     @PostMapping("followOne")
-    public void followOne(HttpServletRequest request, @RequestBody Follow follow){
-        String token = request.getHeader("token");
-        String id = String.valueOf(JWTUtils.getTokenInfo(token).getClaim("id").asString());
-        follow.setFollower_id(Integer.parseInt(id));
-        followService.followOne(follow);
+    public ResultBean<?> followOne(@RequestBody Follow follow){
+//        String token = request.getHeader("token");
+//        String id = String.valueOf(JWTUtils.getTokenInfo(token).getClaim("id").asString());
+//        follow.setFollower_id(Integer.parseInt(id));
+        return new ResultBean<>(followService.followOne(follow));
     }
 
-    /**
-     * 关注数量
+    /*
+     * @param followed_id
+     * @return ResultBean<?>
+     * @author lzc
+     * @date 2020/12/10
+     *  查找 关注数量
      */
     @GetMapping("followCount")
     public ResultBean<?> followCount(@RequestParam String followed_id){
-        return followService.followCount(followed_id);
+        return new ResultBean<>(followService.followCount(followed_id));
     }
 }

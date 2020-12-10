@@ -4,6 +4,11 @@ import lombok.Data;
 
 import java.io.Serializable;
 
+
+/**
+ * @author lzc
+ * discription 问题类
+ */
 @Data
 public class Question implements Serializable {
 

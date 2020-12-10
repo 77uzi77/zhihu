@@ -4,9 +4,13 @@ import lombok.Data;
 
 import java.util.List;
 
-
+/**
+ * @author lzc
+ * discription 评论与前台交互
+ */
 @Data
 public class CommentVo {
+
     private Integer id;
     private String content;
     private Integer reply_id;

@@ -4,6 +4,11 @@ import lombok.Data;
 
 import java.io.Serializable;
 
+
+/**
+ * @author lzc
+ * discription 点赞类
+ */
 @Data
 public class Thumb implements Serializable {
     private Integer id;

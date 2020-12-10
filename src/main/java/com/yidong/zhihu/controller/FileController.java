@@ -7,25 +7,43 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-@Controller
+/**
+ * 处理文件相关请求
+ */
+@RestController
 public class FileController {
 
     @Autowired
     private FileService fileService;
 
 
-    //上传头像
+    /*
+     * @param username
+     * @param file
+     * @return ResultBean<String>
+     * @author ly
+     * @date 2020/12/10
+     *  上传头像
+     */
     @PostMapping("/uploadUserPhoto")
-    @ResponseBody
+//    @ResponseBody
     public ResultBean<String> uploadUserPhoto(String username , @RequestParam("file") MultipartFile file){
         return new ResultBean<>(fileService.insertUserPhoto(username,file));
     }
 
-    //上传背景图
+    /*
+     * @param username
+     * @param file
+     * @return ResultBean<String>
+     * @author ly
+     * @date 2020/12/10
+     *  上传背景图
+     */
     @PostMapping("/uploadBackgroundPhoto")
-    @ResponseBody
+//    @ResponseBody
     public ResultBean<String> uploadBackgroundPhoto(String username , @RequestParam("file") MultipartFile file){
         return new ResultBean<>(fileService.insertBackgroundPhoto(username,file));
     }

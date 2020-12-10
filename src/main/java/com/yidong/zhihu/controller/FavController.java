@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * 处理收藏相关请求
+ */
 @RestController
 @RequestMapping("fav")
 public class FavController {
@@ -16,35 +19,53 @@ public class FavController {
     @Autowired
     private FavService favService;
 
-    /**
+    /*
+     * @param fav
+     * @return ResultBean<?>
+     * @author lzc
+     * @date 2020/12/10
      * 收藏回答
      */
     @PostMapping("favAnswer")
-    public void favAnswer(HttpServletRequest request,@RequestBody Fav fav){
-        String token = request.getHeader("token");
-        String id = String.valueOf(JWTUtils.getTokenInfo(token).getClaim("id").asString());
-        fav.setUser_id(Integer.parseInt(id));
-        favService.favAnswer(fav);
+    public ResultBean<?> favAnswer(@RequestBody Fav fav){
+//        String token = request.getHeader("token");
+//        String id = String.valueOf(JWTUtils.getTokenInfo(token).getClaim("id").asString());
+//        fav.setUser_id(Integer.parseInt(id));
+        return new ResultBean<>(favService.favAnswer(fav),ResultBean.SUCCESS_CODE);
     }
 
-    /**
-     * 回答 的 收藏数量
+    /*
+     * @param answerId
+     * @return ResultBean<?>
+     * @author lzc
+     * @date 2020/12/10
+     *  回答收藏数量
      */
     @GetMapping("favCount")
     public ResultBean<?> favCount(@RequestParam String answerId){
-        return favService.favCount(answerId);
+        return new ResultBean<>(favService.favCount(answerId));
     }
 
-    /**
-     *  分页查询 我的 收藏
+    /*
+     * @param pageNum
+     * @param pageSize
+     * @param user_id
+     * @return ResultBean<?>
+     * @author ly
+     * @date 2020/12/10
+     *  查找我的收藏
      */
     @GetMapping("findMyFav")
     public ResultBean<?> findMyFav(int pageNum, int pageSize,int user_id) {
-        return favService.selectMyFavByPage(pageNum, pageSize, user_id);
+        return new ResultBean<>(favService.selectMyFavByPage(pageNum, pageSize, user_id));
     }
 
-    /**
-     * 个人主页：计算我的收藏总数
+    /*
+     * @param user_id
+     * @return ResultBean<?>
+     * @author ly
+     * @date 2020/12/10
+     *  查找我的收藏数量
      */
     @GetMapping("countMyFav")
     public ResultBean<?> countMyFav(int user_id){

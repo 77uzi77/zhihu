@@ -3,9 +3,9 @@ package com.yidong.zhihu.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.yidong.zhihu.entity.Question;
-import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.mapper.QuestionMapper;
 import com.yidong.zhihu.service.QuestionService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,34 +13,46 @@ import java.util.List;
 
 
 @Service
+@Slf4j
 public class QuestionServiceImpl implements QuestionService {
     @Autowired
     private QuestionMapper questionMapper;
 
     /**
      * 提问
+     * @author lzc
      */
     @Override
     public boolean askQuestion(Question question) {
-        return question.getTitle() != null && questionMapper.add(question) == 1;
+        if (question.getTitle() != null){
+            try {
+                int id = questionMapper.findByTitle(question.getTitle());
+            }catch (Exception e){
+                return false;
+            }
+            return questionMapper.add(question) == 1;
+        }
+        return false;
     }
 
     /**
      * 分页查询
+     * @author lzc
      */
     @Override
-    public ResultBean<?> findPage(int pageNum, int pageSize) {
+    public List<Question> findPage(int pageNum, int pageSize) {
         PageHelper.startPage(pageNum, pageSize);
         List<Question> questionList = questionMapper.selectPage();
         PageInfo<Question> pageList = new PageInfo<>(questionList);
-        return new ResultBean<>(pageList.getList());
+        return pageList.getList();
     }
 
     /**
      * 分页 查询 我的提问
+     * @author ly
      */
     @Override
-    public ResultBean<?> findMyQueByPage(int pageNum, int pageSize, String quser_name) {
+    public List<Question> findMyQueByPage(int pageNum, int pageSize, String quser_name) {
 //        //设置总记录数
 ////        int totalCount = questionMapper.findTotalCount(quser_name);
 ////        // 得到分页条件参数
@@ -55,29 +67,36 @@ public class QuestionServiceImpl implements QuestionService {
         PageHelper.startPage(pageNum, pageSize);
         List<Question> questionList = questionMapper.findMyQuestionByPage(quser_name);
         PageInfo<Question> pageList = new PageInfo<>(questionList);
-        return new ResultBean<>(pageList.getList());
+        return pageList.getList();
     }
 
+    /**
+     * 根据 标题 查找 对应 问题
+     * @author ly
+     */
     @Override
     public String FindQuestionByTitle(String title) {
         return questionMapper.FindQuestionByTitle(title);
     }
 
-
-
     /**
      * 模糊查询
+     * @author lzc
      */
     @Override
-    public ResultBean<?> findQuestion(int pageNum, int pageSize,String content) {
+    public List<Question> findQuestion(int pageNum, int pageSize, String content) {
         PageHelper.startPage(pageNum, pageSize);
         // 拼接模糊查询
         content = "%" + content + "%";
         List<Question> questionList = questionMapper.selectPageBySearch(content);
         PageInfo<Question> pageList = new PageInfo<>(questionList);
-        return new ResultBean<>(pageList.getList());
+        return pageList.getList();
     }
 
+    /**
+     * 查找我的提问数量
+     * @author ly
+     */
     @Override
     public int countMyQues(String quser_name) {
         return questionMapper.countMyQues(quser_name);

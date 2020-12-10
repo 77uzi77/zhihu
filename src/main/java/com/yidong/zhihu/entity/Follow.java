@@ -4,8 +4,10 @@ import lombok.Data;
 
 import java.io.Serializable;
 
+
 /**
- * 关注
+ * @author lzc
+ * discription 关注类
  */
 @Data
 public class Follow implements Serializable {

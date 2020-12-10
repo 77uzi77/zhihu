@@ -47,4 +47,11 @@ public interface QuestionMapper{
     // 根据 id 查找 question
     @Select("select * from question where id = #{id}")
     Question selectQuestionById(Integer id);
+
+    /**
+     *  根据问题标题查找 ，判断是否有相同的问题
+     */
+    @Select("select id from question where title = #{title}")
+    Integer findByTitle(String title);
+
 }

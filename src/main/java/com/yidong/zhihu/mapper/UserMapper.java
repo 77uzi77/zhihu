@@ -47,7 +47,7 @@ public interface UserMapper {
     /**
      *  保存背景图路径
      */
-    @Insert("update user set bgppath=#{bgppath} where username = #{username}")
+    @Update("update user set bgppath=#{bgppath} where username = #{username}")
     void saveBgppath(String username, String bgppath);
 
     //个人主页：分页查询我的关注

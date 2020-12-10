@@ -9,67 +9,98 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ *  处理提问相关请求
+ */
 @RestController
 @RequestMapping("question")
 public class QuestionController {
     @Autowired
     private QuestionService questionService;
 
-    /**
-     * 提问
+    /*
+     * @param question
+     * @return ResultBean<String>
+     * @author lzc
+     * @date 2020/12/10
+     *  提问
      */
     @PostMapping("askQuestion")
-    public ResultBean<String> askQuestion(HttpServletRequest request, @RequestBody Question question){
-        String token = request.getHeader("token");
-        String id = String.valueOf(JWTUtils.getTokenInfo(token).getClaim("id").asString());
-        String username = String.valueOf(JWTUtils.getTokenInfo(token).getClaim("username").asString());
-        System.out.println(username);
-        System.out.println(id);
-        question.setQuser_id(Integer.parseInt(id));
+    public ResultBean<String> askQuestion(@RequestBody Question question){
+//        String token = request.getHeader("token");
+//        String id = String.valueOf(JWTUtils.getTokenInfo(token).getClaim("id").asString());
+//        String username = String.valueOf(JWTUtils.getTokenInfo(token).getClaim("username").asString());
+//        System.out.println(username);
+//        System.out.println(id);
+//        question.setQuser_id(Integer.parseInt(id));
 //        System.out.println(question.getId());
-        question.setQuser_name(username);
-
+//        question.setQuser_name(username);
         if (questionService.askQuestion(question)){
-            return new ResultBean<>("提问成功！！");
+            return new ResultBean<>("提问成功！！",ResultBean.SUCCESS_CODE);
         }else{
-            return new ResultBean<>("提问失败！！请正确填写问题！");
+            return new ResultBean<>("提问失败！！问题为空或者问题已存在！",ResultBean.SUCCESS_CODE);
         }
     }
 
-    /**
+    /*
+     * @param pageNum
+     * @param pageSize
+     * @return ResultBean<?>
+     * @author lzc
+     * @date 2020/12/10
      *  分页查询所有问题
      */
     @GetMapping("findPage")
     public ResultBean<?> findPage(int pageNum, int pageSize){
-        return questionService.findPage(pageNum,pageSize);
+        return new ResultBean<>(questionService.findPage(pageNum,pageSize));
     }
 
-    /**
-     * 查询分页数据
+    /*
+     * @param pageNum
+     * @param pageSize
+     * @param username
+     * @return ResultBean<?>
+     * @author ly
+     * @date 2020/12/10
+     *  分页查询我的提问
      */
     @GetMapping("findMyQueByPage")
     public ResultBean<?> findMyQueByPage(int pageNum, int pageSize,String username){
         return new ResultBean<>(questionService.findMyQueByPage(pageNum, pageSize,username));
     }
 
-    /**
-     * 根据标题查找对应question实体
+    /*
+     * @param title
+     * @return ResultBean<?>
+     * @author ly
+     * @date 2020/12/10
+     *  根据标题查找问题
      */
     @GetMapping("findQuestionByTitle")
     public ResultBean<?> FindQuestionByTitle( String title ){
         return new ResultBean<>(questionService.FindQuestionByTitle(title));
     }
 
-    /**
-     *  模糊搜索问题
+    /*
+     * @param pageNum
+     * @param pageSize
+     * @param content
+     * @return ResultBean<?>
+     * @author lzc
+     * @date 2020/12/10
+     * 模糊查找问题
      */
     @GetMapping("findQuestion")
     public ResultBean<?> findQuestion(int pageNum, int pageSize,String content){
-        return questionService.findQuestion(pageNum,pageSize,content);
+        return new ResultBean<>(questionService.findQuestion(pageNum,pageSize,content));
     }
 
-    /**
-     * 个人主页：计算我的提问总数
+    /*
+     * @param quser_name
+     * @return ResultBean<?>
+     * @author ly
+     * @date 2020/12/10
+     *  查找我的提问数量
      */
     @GetMapping("countMyQues")
     public ResultBean<?> countMyQues(String quser_name){

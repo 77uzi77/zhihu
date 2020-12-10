@@ -5,11 +5,13 @@ package com.yidong.zhihu.constant;
  */
 public class MailPre {
 
+    // 修改密码
     public final static String RESET_PWD = "resetPwd:";
 
+    // 注册
     public final static String REGISTER = "register:";
 
-    public final static String RESET_MAIL = "resetMail:";
+//    public final static String RESET_MAIL = "resetMail:";
 
 
 }

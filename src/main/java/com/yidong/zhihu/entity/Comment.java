@@ -4,6 +4,11 @@ import lombok.Data;
 
 import java.io.Serializable;
 
+
+/**
+ * @author lzc
+ * discription 评论类
+ */
 @Data
 public class Comment implements Serializable {
     private Integer id;

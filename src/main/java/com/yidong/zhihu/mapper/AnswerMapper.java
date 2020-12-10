@@ -31,9 +31,10 @@ public interface AnswerMapper {
 
     /**
      *  查询 该问题 下的所有回答
+     * @param aquestion_id
      */
     @Select("select * from answer where aquestion_id = #{aquestion_id}")
-    List<Answer> selectPageByQuestion(String aquestion_id);
+    List<Answer> selectPageByQuestion(int aquestion_id);
 
     //个人主页：分页查询我的回答
  //   @Select("select question.*,answer.* from answer,question where answer.auser_id = #{auser_id} and answer.aquestion_id=question.id")

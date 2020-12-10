@@ -8,6 +8,7 @@ import com.yidong.zhihu.mapper.CommentMapper;
 import com.yidong.zhihu.mapper.UserMapper;
 import com.yidong.zhihu.service.CommentService;
 import com.yidong.zhihu.utils.CommonUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Slf4j
 public class CommentServiceImpl implements CommentService {
 
     @Autowired
@@ -28,6 +30,7 @@ public class CommentServiceImpl implements CommentService {
 
     /**
      * 评论回答
+     * @author lzc
      */
     @Override
     public boolean addComment(Comment comment) {
@@ -44,6 +47,7 @@ public class CommentServiceImpl implements CommentService {
 
     /**
      * 得到所有评论  封装为List
+     * @author lzc
      */
     @Override
     public List<CommentVo> getAllComment(int answerId) {

@@ -7,6 +7,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
+/**
+ * @author ly
+ * discription 处理前端跨域问题
+ */
 @Component
 public class AllowOriginFilter implements Filter {
 

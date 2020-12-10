@@ -7,6 +7,12 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+
+
+/**
+ * @author lzc
+ * discription 返回前端的 统一返回结果
+ */
 @Data
 @Builder
 @AllArgsConstructor

@@ -15,6 +15,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.Map;
 
+
+/**
+ * @author ly
+ * discription 统一拦截 校验token
+ */
 public class JWTInterceptor implements HandlerInterceptor {
 
     @Autowired

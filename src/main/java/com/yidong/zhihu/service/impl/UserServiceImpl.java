@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.yidong.zhihu.constant.MailPre;
-import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.entity.User;
 import com.yidong.zhihu.entity.vo.UserVo;
 import com.yidong.zhihu.exception.bizException.BizException;
@@ -35,9 +34,18 @@ public class UserServiceImpl implements UserService {
 
     /**
      *  发送验证码到用户邮箱
+     *  @author lzc
      */
     @Override
-    public boolean sendEmail(String pre,String email) {
+    public boolean sendEmail(Integer tag, String email) {
+        String pre ;
+        if (tag == 0){
+            //注册
+            pre = MailPre.REGISTER;
+        } else {
+            //忘记密码
+            pre = MailPre.RESET_PWD;
+        }
 //        User user = userMapper.findUserByEmail(email);
 //        // 检验邮箱
 //        if (user != null){
@@ -57,6 +65,7 @@ public class UserServiceImpl implements UserService {
 
     /**
      *  用户注册
+     *  @author lzc
      */
     @Override
     public boolean register(UserVo user) {
@@ -87,6 +96,7 @@ public class UserServiceImpl implements UserService {
 
     /**
      * 登录
+     * @author ly
      */
     @Override
     @Transactional(propagation = Propagation.SUPPORTS)
@@ -133,25 +143,28 @@ public class UserServiceImpl implements UserService {
 
     /**
      * 分页 查询 我的关注
+     * @author ly
      */
     @Override
-    public ResultBean<?> selectMyFosByPage(int pageNum, int pageSize, int follower_id) {
+    public List<User> selectMyFosByPage(int pageNum, int pageSize, int follower_id) {
         PageHelper.startPage(pageNum, pageSize);
         List<User> myAnsList = userMapper.selectMyFosByPage(follower_id);
         PageInfo<User> pageList = new PageInfo<>(myAnsList);
-        return new ResultBean<>(pageList.getList());
+        return pageList.getList();
     }
 
     /**
      * 查找 个人信息
+     * @author ly
      */
     @Override
-    public ResultBean<User> selectSelfMessage(String username) {
-        return new ResultBean<User>(userMapper.selectSelfMessage(username));
+    public User selectSelfMessage(String username) {
+        return userMapper.selectSelfMessage(username);
     }
 
     /**
      * 编辑个人简介
+     * @author ly
      */
     @Override
     public void editSelfMessage(int id , @RequestBody String message) {
@@ -160,6 +173,7 @@ public class UserServiceImpl implements UserService {
 
     /**
      * 找回密码
+     * @author lzc
      */
     @Override
     public Boolean forgetPassword(UserVo user) {
@@ -181,6 +195,10 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    /**
+     * 根据用户名 查找 对应 用户
+     * @author ly
+     */
     @Override
     public User findUserByUsername(String username) {
         return userMapper.findUserByUsername(username);

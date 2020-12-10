@@ -2,6 +2,9 @@ package com.yidong.zhihu.utils;
 
 import java.security.MessageDigest;
 
+/**
+ * md5加密
+ */
 public class PasswordUtil {
 
     private static final String SALT = "yidong";

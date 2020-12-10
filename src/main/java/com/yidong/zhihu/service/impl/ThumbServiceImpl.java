@@ -2,11 +2,12 @@ package com.yidong.zhihu.service.impl;
 
 
 import com.yidong.zhihu.constant.DataKey;
-import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.entity.Thumb;
+import com.yidong.zhihu.exception.bizException.BizException;
 import com.yidong.zhihu.mapper.ThumbMapper;
 import com.yidong.zhihu.service.ThumbService;
 import com.yidong.zhihu.utils.RedisUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.Cursor;
 import org.springframework.stereotype.Service;
@@ -17,6 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
+@Slf4j
 public class ThumbServiceImpl implements ThumbService {
     @Autowired
     private RedisUtil redisUtil;
@@ -25,31 +27,41 @@ public class ThumbServiceImpl implements ThumbService {
 
     /**
      * 点赞 该回答
+     * @author lzc
      */
     @Override
-    public void thumbAnswer(Thumb thumb) {
+    public String thumbAnswer(Thumb thumb) {
         String builder = thumb.getUser_id() + ":" + thumb.getAnswer_id();
         redisUtil.hset(DataKey.USER_THUMB, builder,thumb.getThumbstate());
         int count = thumb.getThumbstate() == 1 ? 1 : -1;
         redisUtil.hincr(DataKey.USER_THUMB_COUNT,String.valueOf(thumb.getAnswer_id()),count);
+        String msg;
+        if (count == 1){
+            msg = "点赞成功！";
+        }else{
+            msg = "取消点赞成功！";
+        }
+        return msg;
     }
 
     /**
      * 该回答的 点赞 数量
+     * @author lzc
      */
     @Override
-    public ResultBean<?> thumbCount(String answerId) {
+    public String thumbCount(String answerId) {
         if (answerId == null){
-            return new ResultBean<>("请求错误！无效的回答！");
+            throw new BizException("请求错误！无效的回答！");
         }
         String count = String.valueOf(redisUtil.hget(DataKey.USER_THUMB_COUNT,answerId));
         count = count == null ? "0" : count;
-        return new ResultBean<>(count);
+        return count;
     }
 
 
     /**
      * 将 缓存在 redis 的 用户点赞信息 保存到 数据库
+     * @author lzc
      */
     @Override
     @Transactional

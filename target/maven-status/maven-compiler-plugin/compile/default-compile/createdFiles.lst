@@ -3,7 +3,6 @@ com\yidong\zhihu\service\AnswerService.class
 com\yidong\zhihu\mapper\FavMapper.class
 com\yidong\zhihu\service\impl\QuestionServiceImpl.class
 com\yidong\zhihu\interceptor\JWTInterceptor.class
-com\yidong\zhihu\utils\PageUtil.class
 com\yidong\zhihu\service\FileService.class
 com\yidong\zhihu\service\ThumbService.class
 com\yidong\zhihu\utils\PasswordUtil.class
@@ -32,7 +31,6 @@ com\yidong\zhihu\controller\AnswerController.class
 com\yidong\zhihu\entity\User.class
 com\yidong\zhihu\service\impl\UserServiceImpl.class
 com\yidong\zhihu\config\InterceptorConfig.class
-com\yidong\zhihu\entity\PageBean.class
 com\yidong\zhihu\service\impl\FavServiceImpl.class
 com\yidong\zhihu\service\UserService.class
 com\yidong\zhihu\controller\handle\ExceptionHandleController.class
