@@ -126,7 +126,7 @@ public class UserServiceImpl implements UserService {
 //      payload.put("password",userDB.getPassword());
         //生成JWT令牌
         String token = JWTUtils.getToken(payload);
-        System.out.println(userDB.getId());
+   //     System.out.println(userDB.getId());
         //将登录的信息保存到Redis
 //        redisTemplate.opsForValue().set(String.valueOf(userDB.getId()),token);
         redisUtil.set(token,token);

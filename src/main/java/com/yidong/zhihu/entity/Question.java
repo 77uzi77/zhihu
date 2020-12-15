@@ -12,10 +12,10 @@ import java.io.Serializable;
 @Data
 public class Question implements Serializable {
 
-    private Integer id;
-    private Integer quser_id;
-    private String title;
-    private String detail;
-    private String quser_name;
+    private Integer id;             //问题id
+    private Integer quser_id;       //提问者的id
+    private String title;           //问题标题
+    private String detail;          //问题的详情
+    private String quser_name;      //提问者的用户名
 
 }

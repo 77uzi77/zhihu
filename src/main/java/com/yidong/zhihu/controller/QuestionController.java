@@ -18,7 +18,7 @@ public class QuestionController {
     @Autowired
     private QuestionService questionService;
 
-    /*
+    /**
      * @param question
      * @return ResultBean<String>
      * @author lzc
@@ -42,7 +42,7 @@ public class QuestionController {
         }
     }
 
-    /*
+    /**
      * @param pageNum
      * @param pageSize
      * @return ResultBean<?>
@@ -55,7 +55,7 @@ public class QuestionController {
         return new ResultBean<>(questionService.findPage(pageNum,pageSize));
     }
 
-    /*
+    /**
      * @param pageNum
      * @param pageSize
      * @param username
@@ -69,19 +69,19 @@ public class QuestionController {
         return new ResultBean<>(questionService.findMyQueByPage(pageNum, pageSize,username));
     }
 
-    /*
+    /**
      * @param title
      * @return ResultBean<?>
      * @author ly
      * @date 2020/12/10
-     *  根据标题查找问题
+     *  根据id查找问题
      */
-    @GetMapping("findQuestionByTitle")
-    public ResultBean<?> FindQuestionByTitle( String title ){
-        return new ResultBean<>(questionService.FindQuestionByTitle(title));
+    @GetMapping("findQuestionById")
+    public ResultBean<?> findQuestionByTitle( int id ){
+        return new ResultBean<>(questionService.findQuestionById(id));
     }
 
-    /*
+    /**
      * @param pageNum
      * @param pageSize
      * @param content
@@ -95,7 +95,7 @@ public class QuestionController {
         return new ResultBean<>(questionService.findQuestion(pageNum,pageSize,content));
     }
 
-    /*
+    /**
      * @param quser_name
      * @return ResultBean<?>
      * @author ly

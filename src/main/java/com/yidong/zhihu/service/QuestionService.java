@@ -17,9 +17,9 @@ public interface QuestionService {
     List<Question> findMyQueByPage(int page, int pageSize, String username);
 
     /**
-     * 根据标题查找对应的question实体
+     * 根据id查找对应的question实体
      */
-    String FindQuestionByTitle(String title);
+    Question findQuestionById(int id);
 
 
     int countMyQues(String quser_name);

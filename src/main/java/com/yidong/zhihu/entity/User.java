@@ -13,11 +13,12 @@ import java.io.Serializable;
 @Data
 public class User implements Serializable {
 
-    private Integer id;
-    private String username;
-    private String email;
-    private String password;
-    private String message;
-    private String iconpath;
+    private Integer id;       //用户id
+    private String username;  //用户名
+    private String email;     //用户邮箱
+    private String password;  //密码
+    private String message;   //用户个人主页的简介
+    private String iconpath;  //头像
+    private String bgppath;   //背景图
 
 }

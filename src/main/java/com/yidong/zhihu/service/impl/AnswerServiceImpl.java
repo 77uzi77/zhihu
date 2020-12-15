@@ -27,12 +27,10 @@ public class AnswerServiceImpl implements AnswerService {
         if (answer.getContent() == null || answer.getAquestion_id() == null){
             return false;
         }
-        /**
-         * 查看该用户是否已回答该问题，已回答则修改回答,未回答则新增回答
-         */
+
+        // 查看该用户是否已回答该问题，已回答则修改回答,未回答则新增回答
         try {
             int id = answerMapper.findAnswer(answer.getAuser_id(), answer.getAquestion_id());
-//            System.out.println(id);
             return answerMapper.reviseAnswer(answer) == 1;
         }catch (Exception e){
             return answerMapper.addAnswer(answer) == 1;

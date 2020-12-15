@@ -10,6 +10,10 @@ import org.springframework.data.redis.core.RedisTemplate;
 import java.util.Calendar;
 import java.util.Map;
 
+/**
+ * @author ly
+ * discription JWT工具类
+ */
 public class JWTUtils {
 
 
@@ -31,8 +35,8 @@ public class JWTUtils {
             builder.withClaim(k,v);
         });
         String token = builder.withExpiresAt(instance.getTime())   //指定令牌过期时间
-                .sign(Algorithm.HMAC256(SIG));        //sig
-        System.out.println(token);
+                .sign(Algorithm.HMAC256(SIG));                     //sig
+  //      System.out.println(token);
         return token;
     }
 

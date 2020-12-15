@@ -18,8 +18,7 @@ public class ThumbController {
     @Autowired
     private ThumbService thumbService;
 
-    /*
-     * @param request
+    /**
      * @param thumb
      * @return ResultBean<?>
      * @author lzc
@@ -34,7 +33,7 @@ public class ThumbController {
         return new ResultBean<>(thumbService.thumbAnswer(thumb));
     }
 
-    /*
+    /**
      * @param answerId
      * @return ResultBean<?>
      * @author lzc

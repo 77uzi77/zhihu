@@ -37,9 +37,9 @@ public interface QuestionMapper{
     @Select("select * from question where quser_name = #{quser_name}")
     List<Question> findMyQuestionByPage(String quser_name);
 
-    // 根据标题查找对应的question实体
-    @Select("select * from question where title = #{title}")
-    String FindQuestionByTitle(String title);
+    // 根据id查找对应的question实体
+    @Select("select * from question where id = #{id}")
+    Question findQuestionById(int id);
 
     @Select("select * from question where title like #{content} or detail like #{content}")
     List<Question> selectPageBySearch(String content);

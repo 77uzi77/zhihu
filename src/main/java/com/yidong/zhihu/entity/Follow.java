@@ -11,9 +11,9 @@ import java.io.Serializable;
  */
 @Data
 public class Follow implements Serializable {
-    private Integer id;
-    private Integer followstate;
-    private Integer follower_id;
-    private Integer followed_id;
+    private Integer id;             //关注的id
+    private Integer followstate;    //关注状态
+    private Integer follower_id;    //主动关注的用户id
+    private Integer followed_id;    //被关注的用户id
 
 }

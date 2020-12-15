@@ -34,9 +34,6 @@ public class CommentServiceImpl implements CommentService {
      */
     @Override
     public boolean addComment(Comment comment) {
-//        if (comment.getReplied_id() == null){
-////            comment.setReplied_id(0);
-////        }
         if (comment.getPid() == null){
             comment.setPid(0);
         }

@@ -6,8 +6,6 @@ import com.yidong.zhihu.service.AnswerService;;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-
-
 /**
  *  处理回答相关请求
  */
@@ -17,7 +15,7 @@ public class AnswerController {
     @Autowired
     private AnswerService answerService;
 
-    /*
+    /**
      * 回答问题
      * @param answer
      * @return ResultBean<String>
@@ -37,7 +35,7 @@ public class AnswerController {
         }
     }
 
-    /*
+    /**
      * 分页查询问题的回答
      * @param pageNum
      * @param pageSize
@@ -51,7 +49,7 @@ public class AnswerController {
         return new ResultBean<>(answerService.findAnswer(pageNum,pageSize,aquestion_id));
     }
 
-    /*
+    /**
      * 查找个人回答
      * @param pageNum
      * @param pageSize
@@ -65,7 +63,7 @@ public class AnswerController {
         return new ResultBean<>(answerService.selectMyAnsByPage(pageNum, pageSize, auser_id));
     }
 
-    /*
+    /**
      * @param auser_id
      * @return ResultBean<?>
      * @author ly

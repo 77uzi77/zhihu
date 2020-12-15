@@ -19,7 +19,7 @@ public class FavController {
     @Autowired
     private FavService favService;
 
-    /*
+    /**
      * @param fav
      * @return ResultBean<?>
      * @author lzc
@@ -34,7 +34,7 @@ public class FavController {
         return new ResultBean<>(favService.favAnswer(fav),ResultBean.SUCCESS_CODE);
     }
 
-    /*
+    /**
      * @param answerId
      * @return ResultBean<?>
      * @author lzc
@@ -46,7 +46,7 @@ public class FavController {
         return new ResultBean<>(favService.favCount(answerId));
     }
 
-    /*
+    /**
      * @param pageNum
      * @param pageSize
      * @param user_id
@@ -60,7 +60,7 @@ public class FavController {
         return new ResultBean<>(favService.selectMyFavByPage(pageNum, pageSize, user_id));
     }
 
-    /*
+    /**
      * @param user_id
      * @return ResultBean<?>
      * @author ly

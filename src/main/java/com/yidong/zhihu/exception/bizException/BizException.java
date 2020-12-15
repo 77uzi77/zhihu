@@ -2,7 +2,7 @@ package com.yidong.zhihu.exception.bizException;
 
 
  /**
- * @Description : 运行时业务中出现的异常
+ * @Description : 运行时业务中出现的异常  验证异常
  * @Param :
  * @Return :
  */
@@ -14,21 +14,15 @@ public class BizException extends RuntimeException{
 
     /**
      * @Description : 指定枚举类中的错误类
-     * @Param : [errorCode]
-     * @Return :
-     * @Author : SheldonPeng
-     * @Date : 2019-10-11
      */
     public BizException(final BizExceptionCode exceptionCode) {
         super(exceptionCode.getMessage());
         this.code = exceptionCode.getCode();
     }
+
+
     /**
      * @Description : 指定具体业务错误的信息
-     * @Param : [detailedMessage]
-     * @Return :
-     * @Author : SheldonPeng
-     * @Date : 2019-10-11
      */
     public BizException(final String message) {
         super(message);

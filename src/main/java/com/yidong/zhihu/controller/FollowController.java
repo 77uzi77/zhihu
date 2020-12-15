@@ -17,8 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 public class FollowController {
     @Autowired
     private FollowService followService;
-    /*
-     * @param request
+    /**
      * @param follow
      * @return ResultBean<?>
      * @author lzc
@@ -33,7 +32,7 @@ public class FollowController {
         return new ResultBean<>(followService.followOne(follow));
     }
 
-    /*
+    /**
      * @param followed_id
      * @return ResultBean<?>
      * @author lzc

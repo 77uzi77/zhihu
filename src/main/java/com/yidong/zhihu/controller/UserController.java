@@ -23,7 +23,7 @@ public class UserController {
     @Autowired
     private RedisUtil redisUtil;
 
-    /*
+    /**
      * @param email
      * @param tag
      * @return ResultBean<String>
@@ -40,7 +40,7 @@ public class UserController {
         }
     }
 
-    /*
+    /**
      * @param user
      * @return ResultBean<String>
      * @author lzc
@@ -56,7 +56,7 @@ public class UserController {
         }
     }
 
-    /*
+    /**
      * @param user
      * @return ResultBean<JSONObject>
      * @author ly
@@ -68,7 +68,7 @@ public class UserController {
         return new ResultBean<>(userService.login(user));
     }
 
-    /*
+    /**
      * @param userVo
      * @param request
      * @return ResultBean<?>
@@ -89,16 +89,7 @@ public class UserController {
         }
     }
 
-//    @PostMapping("/test")
-//    public ResultBean<String> test(String message) {
-//       /* Map<String,Object> map = new HashMap<>();
-//        map.put("state",true);
-//        map.put("msg","请求成功");*/
-////        System.out.println(message);
-//        return new ResultBean<>("请求成功！",ResultBean.SUCCESS_CODE);/*map*/
-//    }
-
-    /*
+    /**
      * @param pageNum
      * @param pageSize
      * @param follower_id
@@ -112,7 +103,7 @@ public class UserController {
         return new ResultBean<>(userService.selectMyFosByPage(pageNum, pageSize, follower_id));
     }
 
-    /*
+    /**
      * @param username
      * @return ResultBean<?>
      * @author ly
@@ -124,7 +115,7 @@ public class UserController {
         return new ResultBean<>(userService.selectSelfMessage(username));
     }
 
-    /*
+    /**
      * @param user
      * @return ResultBean<String>
      * @author ly
@@ -137,7 +128,7 @@ public class UserController {
         return new ResultBean<>("个人信息编辑成功！",ResultBean.SUCCESS_CODE);
     }
 
-    /*
+    /**
      * @param username
      * @return ResultBean<User>
      * @author ly

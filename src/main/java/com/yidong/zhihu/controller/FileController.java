@@ -20,7 +20,7 @@ public class FileController {
     private FileService fileService;
 
 
-    /*
+    /**
      * @param username
      * @param file
      * @return ResultBean<String>
@@ -34,7 +34,7 @@ public class FileController {
         return new ResultBean<>(fileService.insertUserPhoto(username,file));
     }
 
-    /*
+    /**
      * @param username
      * @param file
      * @return ResultBean<String>

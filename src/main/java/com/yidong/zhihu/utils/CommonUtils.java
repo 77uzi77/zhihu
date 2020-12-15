@@ -20,7 +20,6 @@ public class CommonUtils {
      */
     public static String getNowTime(){
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");//设置日期格式
-        System.out.println(df.format(new Date()));// new Date()为获取当前系统时间
         return df.format(new Date());
     }
 

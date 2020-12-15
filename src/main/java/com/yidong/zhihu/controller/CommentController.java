@@ -16,7 +16,7 @@ public class CommentController {
     @Autowired
     private CommentService commentService;
 
-    /*
+    /**
      * @param comment
      * @return ResultBean<?>
      * @author lzc
@@ -32,7 +32,7 @@ public class CommentController {
         }
     }
 
-    /*
+    /**
      * @param answerId
      * @return ResultBean<?>
      * @author lzc

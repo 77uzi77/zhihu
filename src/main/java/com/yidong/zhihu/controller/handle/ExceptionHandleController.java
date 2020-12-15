@@ -1,7 +1,11 @@
 package com.yidong.zhihu.controller.handle;
 
+import com.auth0.jwt.exceptions.AlgorithmMismatchException;
+import com.auth0.jwt.exceptions.SignatureVerificationException;
+import com.auth0.jwt.exceptions.TokenExpiredException;
 import com.yidong.zhihu.entity.ResultBean;
 import com.yidong.zhihu.exception.bizException.BizException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -13,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
+@Slf4j
 @RestControllerAdvice
 public class ExceptionHandleController implements HandlerExceptionResolver {
 
@@ -99,4 +104,25 @@ public class ExceptionHandleController implements HandlerExceptionResolver {
         return stream.toString();
     }
 
+    //token的异常
+    @ExceptionHandler(SignatureVerificationException.class)
+    public ResultBean<?> signatureVerificationException(SignatureVerificationException e) {
+        e.printStackTrace();
+        log.error("无效签名");
+        return new ResultBean<>(new BizException("无效签名"));
+    }
+
+    @ExceptionHandler(TokenExpiredException.class)
+    public ResultBean<?> tokenExpiredException(TokenExpiredException e) {
+        e.printStackTrace();
+        log.error("token过期");
+        return new ResultBean<>(new BizException("token过期"));
+    }
+
+    @ExceptionHandler(AlgorithmMismatchException.class)
+    public ResultBean<?> algorithmMismatchException(AlgorithmMismatchException e) {
+        e.printStackTrace();
+        log.error("token算法不一致");
+        return new ResultBean<>(new BizException("token算法不一致"));
+    }
 }

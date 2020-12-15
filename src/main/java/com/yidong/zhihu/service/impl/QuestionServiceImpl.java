@@ -28,9 +28,9 @@ public class QuestionServiceImpl implements QuestionService {
             try {
                 int id = questionMapper.findByTitle(question.getTitle());
             }catch (Exception e){
-                return false;
+                return questionMapper.add(question) == 1;
             }
-            return questionMapper.add(question) == 1;
+            return false;
         }
         return false;
     }
@@ -71,12 +71,12 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     /**
-     * 根据 标题 查找 对应 问题
+     * 根据 id 查找 对应 问题
      * @author ly
      */
     @Override
-    public String FindQuestionByTitle(String title) {
-        return questionMapper.FindQuestionByTitle(title);
+    public Question findQuestionById(int id) {
+        return questionMapper.findQuestionById(id);
     }
 
     /**

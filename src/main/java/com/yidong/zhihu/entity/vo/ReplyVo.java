@@ -9,15 +9,15 @@ import lombok.Data;
  */
 @Data
 public class ReplyVo {
-    private Integer id;
-    private String content;
-    private Integer reply_id;
-    private String replyName;
-    private String comment_time;
-    private String reply_icon;
+    private Integer id;            //子评论的id
+    private String content;        //子评论的内容
+    private Integer reply_id;      //子评论者的id
+    private String replyName;      //子评论者的用户名
+    private String comment_time;   //子评论时间
+    private String reply_icon;     //子评论者的头像
 
-    private Integer replied_id;
-    private String replied_name;
-    private String replied_icon;
+    private Integer replied_id;    //父评论者的id
+    private String replied_name;   //父评论的用户名
+    private String replied_icon;   //父评论者的头像
 
 }

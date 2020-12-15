@@ -13,6 +13,6 @@ import lombok.EqualsAndHashCode;
 @Data
 public class UserVo extends User {
 
-    private String code;
+    private String code;          //注册的时的验证码
 
 }

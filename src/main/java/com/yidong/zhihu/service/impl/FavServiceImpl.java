@@ -110,7 +110,6 @@ public class FavServiceImpl implements FavService {
     public List<Answer> selectMyFavByPage(int pageNum, int pageSize, int user_id) {
         PageHelper.startPage(pageNum, pageSize);
         List<Answer> myAnsList = favMapper.selectMyFavByPage(user_id);
-//        System.out.println(myAnsList);
         PageInfo<Answer> pageList = new PageInfo<>(myAnsList);
         return pageList.getList();
     }

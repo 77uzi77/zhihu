@@ -20,7 +20,11 @@ public enum BizExceptionCodeEnum implements BizExceptionCode{
     PAGE_SIZE_NULL("4002","页数不能为空"),
     SEARCH_NULL("4004","搜索条件不能为空,请检查后重新输入!"),
     NO_LOGIN("3001", "用户未进行登录"),
-    PARAM_NULL("500","传参为空");
+    PARAM_NULL("500","传参为空"),
+
+    //token的异常
+    TOKEN_INCORRECT("-1","校验失败，返回登录");
+
 
     private final String code;
 

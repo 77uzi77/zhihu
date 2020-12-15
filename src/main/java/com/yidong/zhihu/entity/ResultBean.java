@@ -19,10 +19,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class ResultBean<T> implements Serializable {
 
-    // 处理成功的状态码
-    public static final String SUCCESS_CODE = "1";
-    // 发生未知错误的状态码
-    public static final String UNSPECIFIED_CODE = "500";
+    public static final String SUCCESS_CODE = "1";                  // 处理成功的状态码
+    public static final String UNSPECIFIED_CODE = "500";            // 发生未知错误的状态码
 
     private String message = "success";
     private String code = ResultBean.SUCCESS_CODE;

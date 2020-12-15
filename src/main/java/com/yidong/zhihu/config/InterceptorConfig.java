@@ -13,7 +13,10 @@ import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.config.annotation.*;
 
 import java.util.List;
-
+/**
+ * @author ly
+ * discription 拦截器
+ */
 @Configuration
 public class InterceptorConfig implements WebMvcConfigurer {
 

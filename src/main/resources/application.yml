@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost/zhihu?characterEncoding=utf8&serverTimezone=GMT
     username: root
-    password: 1234
+    password: root
   redis:
     database: 0
     host: localhost
@@ -45,3 +45,15 @@ web:
   upload-path: static/img/
   url: http://localhost:8080
   log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    path: /IdeaProjects/zhihu
+  level:
+    com.yidong.zhihu.mapper: debug
+
+
+  profiles:
+    active: pro
