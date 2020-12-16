@@ -15,4 +15,6 @@ public interface FavService {
     List<Answer> selectMyFavByPage(int pageNum, int pageSize, int user_id);
 
     int countMyFav(int user_id);
+
+    Integer favState(Integer user_id, Integer answer_id);
 }

@@ -8,6 +8,7 @@ import com.yidong.zhihu.mapper.ThumbMapper;
 import com.yidong.zhihu.service.ThumbService;
 import com.yidong.zhihu.utils.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.aspectj.weaver.patterns.IfPointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.Cursor;
 import org.springframework.stereotype.Service;
@@ -97,6 +98,21 @@ public class ThumbServiceImpl implements ThumbService {
                 thumbMapper.addThumb(thumb);
             }
         }
+    }
+
+    /**
+     * 得到点赞的状态
+     * @author lzc
+     */
+    @Override
+    public Integer thumbState(Integer user_id, Integer answer_id) {
+        String builder = user_id + ":" + answer_id;
+        Integer state = (Integer) redisUtil.hget(DataKey.USER_THUMB, builder);
+        if (state == null){
+            state = thumbMapper.findThumbState(user_id,answer_id);
+            state = state == null ? 0 : state;
+        }
+        return state;
     }
 
 

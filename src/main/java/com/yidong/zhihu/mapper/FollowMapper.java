@@ -28,4 +28,7 @@ public interface FollowMapper {
     @Insert("insert into follow (followstate,followed_id,follower_id) values (#{followstate},#{followed_id},#{follower_id})")
     void addFollow(Follow follow);
 
+    @Select("select followstate from follow where follower_id = #{follower_id} and followed_id = #{followed_id}")
+    Integer findFollowState(Integer followed_id, Integer follower_id);
+
 }

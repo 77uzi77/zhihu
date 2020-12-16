@@ -44,4 +44,17 @@ public class ThumbController {
     public ResultBean<?> thumbCount(@RequestParam String answerId){
         return new ResultBean<>(thumbService.thumbCount(answerId));
     }
+
+    /**
+     * @param user_id
+     * @param answer_id
+     * @return ResultBean<?>
+     * @author lzc
+     * @date 2020/12/15
+     *
+     */
+    @GetMapping("thumbState")
+    public ResultBean<?> thumbState(Integer user_id,Integer answer_id){
+        return new ResultBean<>(thumbService.thumbState(user_id,answer_id));
+    }
 }

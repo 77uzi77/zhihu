@@ -20,7 +20,7 @@ public interface AnswerMapper {
     /**
      *  修改回答
      */
-    @Update("update answer set content = #{content} where auser_id = #{auser_id}")
+    @Update("update answer set content = #{content} where auser_id = #{auser_id} and aquestion_id = #{aquestion_id]")
     int reviseAnswer(Answer answer);
 
     /**

@@ -124,4 +124,20 @@ public class FavServiceImpl implements FavService {
     }
 
 
+    /**
+     * 得到收藏的状态
+     * @author lzc
+     */
+    @Override
+    public Integer favState(Integer user_id, Integer answer_id) {
+        String builder = user_id + ":" + answer_id;
+        Integer state = (Integer) redisUtil.hget(DataKey.USER_FAV, builder);
+        if (state == null){
+            state = favMapper.findFavState(user_id,answer_id);
+            state = state == null ? 0 : state;
+        }
+        return state;
+    }
+
+
 }

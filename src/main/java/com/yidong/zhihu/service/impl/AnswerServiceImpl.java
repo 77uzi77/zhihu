@@ -25,7 +25,7 @@ public class AnswerServiceImpl implements AnswerService {
     public boolean answerQuestion(Answer answer) {
 
         if (answer.getContent() == null || answer.getAquestion_id() == null){
-            return false;
+                return false;
         }
 
         // 查看该用户是否已回答该问题，已回答则修改回答,未回答则新增回答

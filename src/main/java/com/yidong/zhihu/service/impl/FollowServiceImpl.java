@@ -98,5 +98,20 @@ public class FollowServiceImpl implements FollowService {
         }
     }
 
+    /**
+     * 得到关注的状态
+     * @author lzc
+     */
+    @Override
+    public Integer followState(Integer follower_id, Integer followed_id) {
+        String builder = followed_id + ":" + follower_id;
+        Integer state = (Integer) redisUtil.hget(DataKey.USER_FOLLOW, builder);
+        if (state == null){
+            state = followMapper.findFollowState(followed_id,follower_id);
+            state = state == null ? 0 : state;
+        }
+        return state;
+    }
+
 
 }

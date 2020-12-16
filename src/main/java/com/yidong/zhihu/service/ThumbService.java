@@ -8,4 +8,6 @@ public interface ThumbService {
     String thumbCount(String answerId);
 
     void transThumbFromRedis2DB();
+
+    Integer thumbState(Integer user_id, Integer answer_id);
 }

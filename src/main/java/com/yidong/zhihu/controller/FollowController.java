@@ -43,4 +43,18 @@ public class FollowController {
     public ResultBean<?> followCount(@RequestParam String followed_id){
         return new ResultBean<>(followService.followCount(followed_id));
     }
+
+
+    /**
+     * @param followed_id
+     * @param follower_id
+     * @return ResultBean<?>
+     * @author lzc
+     * @date 2020/12/15
+     *
+     */
+    @GetMapping("followState")
+    public ResultBean<?> favState(Integer follower_id,Integer followed_id){
+        return new ResultBean<>(followService.followState(follower_id,followed_id));
+    }
 }

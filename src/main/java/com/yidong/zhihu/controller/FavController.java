@@ -71,4 +71,18 @@ public class FavController {
     public ResultBean<?> countMyFav(int user_id){
         return new ResultBean<>(favService.countMyFav(user_id));
     }
+
+
+    /**
+     * @param user_id
+     * @param answer_id
+     * @return ResultBean<?>
+     * @author lzc
+     * @date 2020/12/15
+     *
+     */
+    @GetMapping("favState")
+    public ResultBean<?> favState(Integer user_id,Integer answer_id){
+        return new ResultBean<>(favService.favState(user_id,answer_id));
+    }
 }

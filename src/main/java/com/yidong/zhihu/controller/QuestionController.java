@@ -70,7 +70,7 @@ public class QuestionController {
     }
 
     /**
-     * @param title
+     * @param id
      * @return ResultBean<?>
      * @author ly
      * @date 2020/12/10

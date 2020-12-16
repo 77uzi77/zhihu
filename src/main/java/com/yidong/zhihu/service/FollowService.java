@@ -11,5 +11,7 @@ public interface FollowService {
     @Transactional
     void transFollowFromRedis2DB();
 
-  //  int countMyFollow(int followed_id);
+    Integer followState(Integer follower_id, Integer followed_id);
+
+    //  int countMyFollow(int followed_id);
 }

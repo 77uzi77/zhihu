@@ -50,4 +50,7 @@ public interface FavMapper {
     //个人主页：计算 我的收藏 总记录数
     @Select("select count(*) from fav where user_id = #{user_id} and favstate=1")
     int countMyFav(int user_id);
+
+    @Select("select favstate from fav where user_id = #{user_id} and answer_id = #{answer_id}")
+    Integer findFavState(Integer user_id, Integer answer_id);
 }

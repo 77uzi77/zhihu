@@ -28,4 +28,8 @@ public interface ThumbMapper {
      */
     @Insert("insert into thumb (thumbstate,user_id,answer_id) values (#{thumbstate},#{user_id},#{answer_id})")
     void addThumb(Thumb thumb);
+
+    @Select("select thumbstate from thumb where user_id = #{user_id} and answer_id = #{answer_id}")
+    Integer findThumbState(Integer user_id, Integer answer_id);
+
 }

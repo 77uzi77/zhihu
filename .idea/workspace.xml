@@ -20,68 +20,43 @@
   <component name="ChangeListManager">
     <list default="true" id="bed8e52c-2b1e-484e-853e-8e8bf4182e12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/config/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/AnswerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/FavController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/FavController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/FileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/FollowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/FollowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/QuestionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/ThumbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/ThumbController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/handle/ExceptionHandleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/handle/ExceptionHandleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Fav.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Fav.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Follow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Follow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/ResultBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/ResultBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Thumb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/Thumb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/vo/CommentVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/vo/CommentVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/vo/ReplyVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/vo/ReplyVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/vo/UserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/vo/UserVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/exception/bizException/BizException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/exception/bizException/BizException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/exception/bizException/BizExceptionCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/exception/bizException/BizExceptionCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/interceptor/JWTInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/interceptor/JWTInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/QuestionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/QuestionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/filter/AllowOriginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/filter/AllowOriginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/AnswerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/AnswerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/FavMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/FavMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/FollowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/FollowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/ThumbMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/ThumbMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/FavService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/FavService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/FollowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/FollowService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/ThumbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/ThumbService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/AnswerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/AnswerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/CommentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/FavServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/FavServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/QuestionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/utils/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/utils/JWTUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/utils/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/utils/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/FollowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/FollowServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/ThumbServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/ThumbServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yidong/zhihu/ZhihuApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yidong/zhihu/ZhihuApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/zhihu.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/config/InterceptorConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/config/InterceptorConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/AnswerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/AnswerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/FavController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/FavController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/FollowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/FollowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/QuestionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/ThumbController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/ThumbController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/handle/ExceptionHandleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/handle/ExceptionHandleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/entity/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/entity/Answer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/entity/ResultBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/entity/ResultBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/exception/bizException/BizException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/exception/bizException/BizException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/exception/bizException/BizExceptionCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/exception/bizException/BizExceptionCodeEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/interceptor/JWTInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/interceptor/JWTInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/QuestionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/QuestionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/AnswerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/AnswerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/filter/AllowOriginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/filter/AllowOriginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/AnswerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/AnswerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/FavMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/FavMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/FollowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/FollowMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/ThumbMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/ThumbMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/FavService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/FavService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/FollowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/FollowService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/ThumbService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/ThumbService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/FavServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/FavServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/QuestionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/utils/CommonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/utils/CommonUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/utils/JWTUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/utils/JWTUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/utils/RedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/utils/RedisUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/yidong/zhihu/ZhihuApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/yidong/zhihu/ZhihuApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/FollowServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/FollowServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/ThumbServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/ThumbServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,9 +86,14 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="C:\maven\apache-maven-3.6.3\respository_zhihu_real" />
-        <option name="mavenHome" value="C:\Program Files\mysoft\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenRunner">
@@ -144,11 +124,11 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -170,19 +150,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ZhihuApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ZhihuApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zhihu" />
       <extension name="coverage">
@@ -228,7 +195,19 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -288,6 +267,12 @@
       <workItem from="1607930173531" duration="2036000" />
       <workItem from="1607951406859" duration="6034000" />
       <workItem from="1608003467018" duration="8811000" />
+      <workItem from="1608033008137" duration="3144000" />
+      <workItem from="1608037482442" duration="2328000" />
+      <workItem from="1608111393471" duration="1712000" />
+      <workItem from="1608122319705" duration="1328000" />
+      <workItem from="1608123673383" duration="30000" />
+      <workItem from="1608123737188" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1603961270433</created>
@@ -363,19 +348,20 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
@@ -407,11 +393,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604642340779" />
-    <state x="530" y="55" key="#com.intellij.ide.util.MemberChooser" timestamp="1606635142320">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="663" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1608038867826">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="530" y="55" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606635142320" />
     <state x="663" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606546848799" />
+    <state x="663" y="69" key="#com.intellij.ide.util.MemberChooser/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608038867826" />
     <state x="508" y="263" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1607431216852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -420,104 +407,108 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="334" y="325" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1605855806648" />
-    <state x="903" y="608" width="578" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607581356449">
+    <state x="903" y="608" width="578" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608039055291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="722" y="482" width="490" height="342" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1605857683156" />
-    <state x="903" y="608" width="578" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607581356449" />
+    <state x="903" y="608" width="578" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039055291" />
     <state x="241" y="0" key="CommitChangelistDialog2" timestamp="1607418015768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="193" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606220656563" />
     <state x="241" y="0" key="CommitChangelistDialog2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607418015768" />
-    <state x="602" y="96" key="FileChooserDialogImpl" timestamp="1608004258241">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="177" y="299" width="540" height="550" key="FileChooserDialogImpl" timestamp="1608035335049">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="602" y="96" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1608004258241" />
     <state x="2673" y="121" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1607759673393" />
     <state x="499" y="94" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607931232662" />
     <state x="624" y="119" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606550139150" />
-    <state x="753" y="121" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607430205787" />
-    <state width="1877" height="323" key="GridCell.Tab.0.bottom" timestamp="1608020453354">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="177" y="299" width="540" height="550" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608035335049" />
+    <state width="1867" height="261" key="GridCell.Tab.0.bottom" timestamp="1608123649204">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093902" />
     <state width="1877" height="323" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453354" />
     <state width="1493" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607932221494" />
     <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="264" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607439171204" />
-    <state width="1877" height="323" key="GridCell.Tab.0.center" timestamp="1608020453353">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1867" height="261" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608123649204" />
+    <state width="1867" height="261" key="GridCell.Tab.0.center" timestamp="1608123649204">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093902" />
     <state width="1877" height="323" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453353" />
     <state width="1493" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607932221493" />
     <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="264" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607439171204" />
-    <state width="1877" height="323" key="GridCell.Tab.0.left" timestamp="1608020453353">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1867" height="261" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608123649204" />
+    <state width="1867" height="261" key="GridCell.Tab.0.left" timestamp="1608123649203">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093901" />
     <state width="1877" height="323" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453353" />
     <state width="1493" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607932221493" />
     <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="264" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607439171204" />
-    <state width="1877" height="323" key="GridCell.Tab.0.right" timestamp="1608020453354">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1867" height="261" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608123649203" />
+    <state width="1867" height="261" key="GridCell.Tab.0.right" timestamp="1608123649204">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093902" />
     <state width="1877" height="323" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453354" />
     <state width="1493" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607932221494" />
     <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="264" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607439171204" />
-    <state width="1877" height="323" key="GridCell.Tab.1.bottom" timestamp="1608020453354">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1867" height="261" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608123649204" />
+    <state width="1867" height="319" key="GridCell.Tab.1.bottom" timestamp="1608039812641">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093904" />
     <state width="1877" height="323" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453354" />
     <state width="1493" height="281" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607932221490" />
     <state width="1877" height="242" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="264" key="GridCell.Tab.1.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607428032205" />
-    <state width="1877" height="323" key="GridCell.Tab.1.center" timestamp="1608020453354">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1867" height="319" key="GridCell.Tab.1.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039812641" />
+    <state width="1867" height="319" key="GridCell.Tab.1.center" timestamp="1608039812640">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093902" />
     <state width="1877" height="323" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453354" />
     <state width="1493" height="281" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607932221489" />
     <state width="1877" height="242" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="264" key="GridCell.Tab.1.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607428032204" />
-    <state width="1877" height="323" key="GridCell.Tab.1.left" timestamp="1608020453354">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1867" height="319" key="GridCell.Tab.1.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039812640" />
+    <state width="1867" height="319" key="GridCell.Tab.1.left" timestamp="1608039812640">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093902" />
     <state width="1877" height="323" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453354" />
     <state width="1493" height="281" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607932221489" />
     <state width="1877" height="242" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="264" key="GridCell.Tab.1.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607428032204" />
-    <state width="1877" height="323" key="GridCell.Tab.1.right" timestamp="1608020453354">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1867" height="319" key="GridCell.Tab.1.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039812640" />
+    <state width="1867" height="319" key="GridCell.Tab.1.right" timestamp="1608039812641">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093903" />
     <state width="1877" height="323" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453354" />
     <state width="1493" height="281" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607932221490" />
     <state width="1877" height="242" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="264" key="GridCell.Tab.1.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607428032205" />
-    <state width="1483" height="234" key="GridCell.Tab.2.bottom" timestamp="1605629359162">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1867" height="319" key="GridCell.Tab.1.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039812641" />
+    <state width="1867" height="319" key="GridCell.Tab.2.bottom" timestamp="1608039812642">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="234" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605629359162" />
-    <state width="1483" height="234" key="GridCell.Tab.2.center" timestamp="1605629359162">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1867" height="319" key="GridCell.Tab.2.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039812642" />
+    <state width="1867" height="319" key="GridCell.Tab.2.center" timestamp="1608039812641">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="234" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1605629359162" />
-    <state width="1483" height="234" key="GridCell.Tab.2.left" timestamp="1605629359162">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1867" height="319" key="GridCell.Tab.2.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039812641" />
+    <state width="1867" height="319" key="GridCell.Tab.2.left" timestamp="1608039812641">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="234" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1605629359162" />
-    <state width="1483" height="234" key="GridCell.Tab.2.right" timestamp="1605629359162">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1867" height="319" key="GridCell.Tab.2.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039812641" />
+    <state width="1867" height="319" key="GridCell.Tab.2.right" timestamp="1608039812642">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1483" height="234" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1605629359162" />
+    <state width="1867" height="319" key="GridCell.Tab.2.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039812642" />
     <state x="194" y="0" key="Maven.ArtifactSearchDialog" timestamp="1603882682916">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -532,11 +523,11 @@
     </state>
     <state x="411" y="59" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1606222615385" />
     <state x="552" y="196" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606486535704" />
-    <state x="193" y="0" width="1535" height="883" key="SettingsEditor" timestamp="1607581181840">
+    <state x="193" y="0" width="1535" height="883" key="SettingsEditor" timestamp="1608035341191">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="154" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605321547535" />
-    <state x="193" y="0" width="1535" height="883" key="SettingsEditor/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607581181840" />
+    <state x="193" y="0" width="1535" height="883" key="SettingsEditor/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608035341191" />
     <state x="1029" y="119" key="VCS.ChangeListViewerDialog" timestamp="1606222154908">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -555,11 +546,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606223487445" />
-    <state x="499" y="247" key="com.intellij.ide.util.TipDialog" timestamp="1607576872743">
+    <state x="499" y="247" key="com.intellij.ide.util.TipDialog" timestamp="1608124173882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="399" y="196" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1606217321857" />
-    <state x="499" y="247" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607576872743" />
+    <state x="499" y="247" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608124173882" />
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604674420550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -580,10 +571,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="530" y="159" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1606222029074" />
-    <state x="457" y="159" key="git4idea.merge.GitPullDialog" timestamp="1606221987028">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="571" y="201" key="git4idea.merge.GitPullDialog" timestamp="1608021387771">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="457" y="159" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1606221987028" />
+    <state x="571" y="201" key="git4idea.merge.GitPullDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608021387771" />
     <state x="536" y="249" key="git4idea.rebase.GitRebaseDialog" timestamp="1604720481328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
