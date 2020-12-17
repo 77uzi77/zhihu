@@ -3,10 +3,14 @@ package com.yidong.zhihu.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.yidong.zhihu.entity.Answer;
+import com.yidong.zhihu.entity.User;
+import com.yidong.zhihu.entity.vo.AnswerVo;
 import com.yidong.zhihu.mapper.AnswerMapper;
+import com.yidong.zhihu.mapper.UserMapper;
 import com.yidong.zhihu.service.AnswerService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +20,10 @@ import java.util.List;
 public class AnswerServiceImpl implements AnswerService {
     @Autowired
     private AnswerMapper answerMapper;
+    @Autowired
+    private UserMapper userMapper;
+    @Value("${web.upload-path}")
+    private String path;
 
     /**
      * 回答问题
@@ -42,10 +50,15 @@ public class AnswerServiceImpl implements AnswerService {
      *  @author lzc
      */
     @Override
-    public List<Answer> findAnswer(int pageNum, int pageSize, int aquestion_id) {
+    public List<AnswerVo> findAnswer(int pageNum, int pageSize, int aquestion_id) {
         PageHelper.startPage(pageNum, pageSize);
-        List<Answer> answerList = answerMapper.selectPageByQuestion(aquestion_id);
-        PageInfo<Answer> pageList = new PageInfo<>(answerList);
+        List<AnswerVo> answerList = answerMapper.selectPageByQuestion(aquestion_id);
+        for (AnswerVo answerVo : answerList) {
+            User user = userMapper.findUsernameByUserId(answerVo.getAuser_id());
+            answerVo.setUsername(user.getUsername());
+            answerVo.setIconPath(path + user.getIconpath());
+        }
+        PageInfo<AnswerVo> pageList = new PageInfo<>(answerList);
         return pageList.getList();
     }
 

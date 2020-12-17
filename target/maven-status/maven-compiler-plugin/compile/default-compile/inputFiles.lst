@@ -39,6 +39,7 @@ C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\config\Inte
 C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\controller\AnswerController.java
 C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\config\RedisConfig.java
 C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\mapper\AnswerMapper.java
+C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\entity\vo\AnswerVo.java
 C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\ZhihuApplication.java
 C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\utils\CommonUtils.java
 C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\entity\vo\ReplyVo.java
@@ -48,6 +49,7 @@ C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\RedisSchedu
 C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\utils\RedisUtil.java
 C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\service\impl\AnswerServiceImpl.java
 C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\service\impl\FollowServiceImpl.java
+C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\controller\TestLog.java
 C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\utils\RandomCodeUtil.java
 C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\mapper\UserMapper.java
 C:\Users\啊柒哟\IdeaProjects\zhihu\src\main\java\com\yidong\zhihu\interceptor\JWTInterceptor.java

@@ -19,42 +19,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bed8e52c-2b1e-484e-853e-8e8bf4182e12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/entity/vo/AnswerVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/FavController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/FavController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/FollowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/FollowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/ThumbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/controller/ThumbController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/filter/AllowOriginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/filter/AllowOriginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/AnswerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/AnswerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/FavMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/FavMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/FollowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/FollowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/ThumbMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/mapper/ThumbMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/FavService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/FavService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/FollowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/FollowService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/ThumbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/ThumbService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/AnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/AnswerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/AnswerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/AnswerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/FavServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/FavServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/FollowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/FollowServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/ThumbServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yidong/zhihu/service/impl/ThumbServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/FavController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/FavController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/FollowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/FollowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/ThumbController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/controller/ThumbController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/filter/AllowOriginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/filter/AllowOriginFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/AnswerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/AnswerMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/FavMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/FavMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/FollowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/FollowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/ThumbMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/mapper/ThumbMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/FavService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/FavService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/FollowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/FollowService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/QuestionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/ThumbService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/ThumbService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/FavServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/FavServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/FollowServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/FollowServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/ThumbServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/ThumbServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/AnswerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/AnswerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/AnswerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yidong/zhihu/service/impl/AnswerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.yidong.zhihu.ZhihuApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.yidong.zhihu.ZhihuApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.yidong.zhihu.ZhihuApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.yidong.zhihu.ZhihuApplicationTests.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/zhihu-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
@@ -124,7 +100,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -273,6 +249,10 @@
       <workItem from="1608122319705" duration="1328000" />
       <workItem from="1608123673383" duration="30000" />
       <workItem from="1608123737188" duration="22000" />
+      <workItem from="1608124174492" duration="75000" />
+      <workItem from="1608192616365" duration="938000" />
+      <workItem from="1608193575433" duration="51000" />
+      <workItem from="1608200300241" duration="355000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1603961270433</created>
@@ -344,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607418016464</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Self-homepage">
+      <created>1608124209274</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608124209274</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,10 +368,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="261" y="0" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1606220627438" />
-    <state x="452" y="96" key="#Project_Structure" timestamp="1607429702437">
+    <state x="452" y="96" key="#Project_Structure" timestamp="1608193307261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="96" key="#Project_Structure/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607429702437" />
+    <state x="452" y="96" key="#Project_Structure/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608193307261" />
     <state x="674" y="265" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1607579762210">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -412,11 +399,11 @@
     </state>
     <state x="722" y="482" width="490" height="342" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1605857683156" />
     <state x="903" y="608" width="578" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039055291" />
-    <state x="241" y="0" key="CommitChangelistDialog2" timestamp="1607418015768">
+    <state x="241" y="0" key="CommitChangelistDialog2" timestamp="1608124207171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="193" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606220656563" />
-    <state x="241" y="0" key="CommitChangelistDialog2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607418015768" />
+    <state x="241" y="0" key="CommitChangelistDialog2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608124207171" />
     <state x="177" y="299" width="540" height="550" key="FileChooserDialogImpl" timestamp="1608035335049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -425,70 +412,70 @@
     <state x="499" y="94" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607931232662" />
     <state x="624" y="119" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606550139150" />
     <state x="177" y="299" width="540" height="550" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608035335049" />
-    <state width="1867" height="261" key="GridCell.Tab.0.bottom" timestamp="1608123649204">
+    <state width="1867" height="261" key="GridCell.Tab.0.bottom" timestamp="1608193626341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093902" />
     <state width="1877" height="323" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453354" />
     <state width="1493" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607932221494" />
     <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="261" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608123649204" />
-    <state width="1867" height="261" key="GridCell.Tab.0.center" timestamp="1608123649204">
+    <state width="1867" height="261" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608193626341" />
+    <state width="1867" height="261" key="GridCell.Tab.0.center" timestamp="1608193626340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093902" />
     <state width="1877" height="323" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453353" />
     <state width="1493" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607932221493" />
     <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="261" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608123649204" />
-    <state width="1867" height="261" key="GridCell.Tab.0.left" timestamp="1608123649203">
+    <state width="1867" height="261" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608193626340" />
+    <state width="1867" height="261" key="GridCell.Tab.0.left" timestamp="1608193626339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093901" />
     <state width="1877" height="323" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453353" />
     <state width="1493" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607932221493" />
     <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="261" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608123649203" />
-    <state width="1867" height="261" key="GridCell.Tab.0.right" timestamp="1608123649204">
+    <state width="1867" height="261" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608193626339" />
+    <state width="1867" height="261" key="GridCell.Tab.0.right" timestamp="1608193626341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093902" />
     <state width="1877" height="323" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453354" />
     <state width="1493" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607932221494" />
     <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="261" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608123649204" />
-    <state width="1867" height="319" key="GridCell.Tab.1.bottom" timestamp="1608039812641">
+    <state width="1867" height="261" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608193626341" />
+    <state width="1867" height="261" key="GridCell.Tab.1.bottom" timestamp="1608193554394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093904" />
     <state width="1877" height="323" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453354" />
     <state width="1493" height="281" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607932221490" />
     <state width="1877" height="242" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="319" key="GridCell.Tab.1.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039812641" />
-    <state width="1867" height="319" key="GridCell.Tab.1.center" timestamp="1608039812640">
+    <state width="1867" height="261" key="GridCell.Tab.1.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608193554394" />
+    <state width="1867" height="261" key="GridCell.Tab.1.center" timestamp="1608193554393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093902" />
     <state width="1877" height="323" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453354" />
     <state width="1493" height="281" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607932221489" />
     <state width="1877" height="242" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="319" key="GridCell.Tab.1.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039812640" />
-    <state width="1867" height="319" key="GridCell.Tab.1.left" timestamp="1608039812640">
+    <state width="1867" height="261" key="GridCell.Tab.1.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608193554393" />
+    <state width="1867" height="261" key="GridCell.Tab.1.left" timestamp="1608193554392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093902" />
     <state width="1877" height="323" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453354" />
     <state width="1493" height="281" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607932221489" />
     <state width="1877" height="242" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="319" key="GridCell.Tab.1.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039812640" />
-    <state width="1867" height="319" key="GridCell.Tab.1.right" timestamp="1608039812641">
+    <state width="1867" height="261" key="GridCell.Tab.1.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608193554392" />
+    <state width="1867" height="261" key="GridCell.Tab.1.right" timestamp="1608193554394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="521" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607759093903" />
     <state width="1877" height="323" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608020453354" />
     <state width="1493" height="281" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607932221490" />
     <state width="1877" height="242" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606549812730" />
-    <state width="1867" height="319" key="GridCell.Tab.1.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608039812641" />
+    <state width="1867" height="261" key="GridCell.Tab.1.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608193554394" />
     <state width="1867" height="319" key="GridCell.Tab.2.bottom" timestamp="1608039812642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -528,16 +515,20 @@
     </state>
     <state x="154" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605321547535" />
     <state x="193" y="0" width="1535" height="883" key="SettingsEditor/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608035341191" />
+    <state width="623" height="498" key="SwitcherDM" timestamp="1608193538475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="623" height="498" key="SwitcherDM/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608193538475" />
     <state x="1029" y="119" key="VCS.ChangeListViewerDialog" timestamp="1606222154908">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="1029" y="119" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1606222154908" />
-    <state x="326" y="102" key="Vcs.Push.Dialog.v2" timestamp="1607418023566">
+    <state x="326" y="102" key="Vcs.Push.Dialog.v2" timestamp="1608124220560">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="261" y="81" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606217391939" />
     <state x="326" y="102" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606549667756" />
-    <state x="326" y="102" key="Vcs.Push.Dialog.v2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607418023566" />
+    <state x="326" y="102" key="Vcs.Push.Dialog.v2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608124220560" />
     <state x="389" y="85" key="VcsDiffUtil.ChangesDialog" timestamp="1604720350218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -546,11 +537,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606223487445" />
-    <state x="499" y="247" key="com.intellij.ide.util.TipDialog" timestamp="1608124173882">
+    <state x="499" y="247" key="com.intellij.ide.util.TipDialog" timestamp="1608200300200">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="399" y="196" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1606217321857" />
-    <state x="499" y="247" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608124173882" />
+    <state x="499" y="247" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1608200300200" />
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604674420550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

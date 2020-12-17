@@ -1,6 +1,7 @@
 package com.yidong.zhihu.mapper;
 
 import com.yidong.zhihu.entity.Answer;
+import com.yidong.zhihu.entity.vo.AnswerVo;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.mapping.FetchType;
 import org.springframework.stereotype.Repository;
@@ -34,7 +35,7 @@ public interface AnswerMapper {
      * @param aquestion_id
      */
     @Select("select * from answer where aquestion_id = #{aquestion_id}")
-    List<Answer> selectPageByQuestion(int aquestion_id);
+    List<AnswerVo> selectPageByQuestion(int aquestion_id);
 
     //个人主页：分页查询我的回答
  //   @Select("select question.*,answer.* from answer,question where answer.auser_id = #{auser_id} and answer.aquestion_id=question.id")
