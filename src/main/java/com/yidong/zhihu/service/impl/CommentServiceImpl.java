@@ -58,7 +58,7 @@ public class CommentServiceImpl implements CommentService {
             user = userMapper.findUsernameByUserId( vo.getReply_id());
             vo.setReplyName(user.getUsername());
             if (user.getIconpath() != null){
-                vo.setIcon(path + user.getIconpath());
+                vo.setIcon(path + "user/" + user.getIconpath());
             }
             //查找所有父级评论下的子评论
             List<ReplyVo> vos = commentMapper.selectByPid(vo.getId());
@@ -68,13 +68,13 @@ public class CommentServiceImpl implements CommentService {
                 user = userMapper.findUsernameByUserId(replyVo.getReply_id());
                 replyVo.setReplyName(user.getUsername());
                 if (user.getIconpath() != null){
-                    replyVo.setReply_icon(path + user.getIconpath());
+                    replyVo.setReply_icon(path + "user/" + user.getIconpath());
                 }
                 // 添加被回复人的用户名 和 头像
                 user = userMapper.findUsernameByUserId(replyVo.getReplied_id());
                 replyVo.setReplied_name(user.getUsername());
                 if (user.getIconpath() != null){
-                    replyVo.setReplied_icon(path + user.getIconpath());
+                    replyVo.setReplied_icon(path + "user/" +user.getIconpath());
                 }
             }
             vo.setReplyVo(vos);

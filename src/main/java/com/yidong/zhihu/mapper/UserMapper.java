@@ -55,7 +55,7 @@ public interface UserMapper {
     List<User> selectMyFosByPage(int follower_id);
 
     //个人主页：查看个人基本信息
-    @Select("select username,email,message from user where username = #{username}")
+    @Select("select username,email,message,iconpath,bgppath from user where username = #{username}")
     User selectSelfMessage(String username);
 
     //个人主页：编辑个人信息

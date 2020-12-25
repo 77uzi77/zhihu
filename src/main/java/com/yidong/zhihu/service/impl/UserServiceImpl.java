@@ -13,6 +13,7 @@ import com.yidong.zhihu.service.UserService;
 import com.yidong.zhihu.utils.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -31,6 +32,8 @@ public class UserServiceImpl implements UserService {
     private MailService mailService;
     @Autowired
     private RedisUtil redisUtil;
+    @Value("${web.upload-path}")
+    private String path;
 
     /**
      *  发送验证码到用户邮箱
@@ -159,7 +162,10 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public User selectSelfMessage(String username) {
-        return userMapper.selectSelfMessage(username);
+        User user = userMapper.selectSelfMessage(username);
+        user.setIconpath(path + "user/" + user.getIconpath());
+        user.setBgppath(path + "bgp/" + user.getBgppath());
+        return user;
     }
 
     /**

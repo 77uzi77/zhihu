@@ -1,5 +1,6 @@
 package com.yidong.zhihu.utils;
 
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.regex.Matcher;
@@ -24,6 +25,6 @@ public class CommonUtils {
     }
 
     public static void main(String[] args) {
-        getNowTime();
+//        getNowTime();
     }
 }

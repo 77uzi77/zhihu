@@ -113,7 +113,7 @@ public class UserController {
     @GetMapping("findSelfMessage")
     public ResultBean<?> findSelfMessage(String username) {
         return new ResultBean<>(userService.selectSelfMessage(username));
-    }
+}
 
     /**
      * @param user

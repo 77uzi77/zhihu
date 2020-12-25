@@ -56,7 +56,7 @@ public class AnswerServiceImpl implements AnswerService {
         for (AnswerVo answerVo : answerList) {
             User user = userMapper.findUsernameByUserId(answerVo.getAuser_id());
             answerVo.setUsername(user.getUsername());
-            answerVo.setIconPath(path + user.getIconpath());
+            answerVo.setIconPath(path + "user/" + user.getIconpath());
         }
         PageInfo<AnswerVo> pageList = new PageInfo<>(answerList);
         return pageList.getList();
@@ -82,4 +82,6 @@ public class AnswerServiceImpl implements AnswerService {
     public int countMyAns(int auser_id) {
         return answerMapper.countMyAns(auser_id);
     }
+
+
 }
